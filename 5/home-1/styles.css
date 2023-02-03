@@ -1,0 +1,32 @@
+/* 
+<ol>
+    <li>Задайте зеленый цвет текста всем ссылкам, у которых атрибут <b>target</b> равен <b>_blank</b></li>
+    <li>Задайте всем спискам желтый фон</li>
+    <li>Футеру и хедеру задайте синюю пунктирную рамку (<code>border: 3px dashed blue;</code>)</li>
+    <li>Задайте всем заголовкам отступ слева 20px (margin-left: 20px;)</li>
+    <li>Задайте всем новым статьям (<code>&lt;article&gt;</code> с классом <b>new</b>) размер шрифта 24px (<code>font-size: 24px;</code>). А всем новым топикам(<code>&lt;li&gt;</code> с классом <b>new</b>) установите красный фон</li>
+    <li>Подчеркните новую сегодняшнюю тему (есть оба класса <b>new</b> и <b>posted-today</b>) розовым фоном (pink)</li>
+</ol>
+*/
+
+a[target="_blank"] {
+    color: green;
+}
+ol, ul {
+    background-color: yellow;
+}
+footer, header {
+    border: 3px dashed blue;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 20px;
+}
+article.new {
+    font-size: 24px;
+}
+li.new {
+    background-color: red;
+}
+.new.posted-today {
+    background-color: pink;
+}
