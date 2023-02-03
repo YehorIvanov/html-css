@@ -1,0 +1,20 @@
+/* <ol>
+    <li>Задай элементу со значением атрибута <code>data-description</code> <b>anchors</b> серый (grey) цвет фона</li>
+    <li>Задай всем элементам у которых есть атрибут <code>data-description</code> размер шрифта <code>24px</code></li>
+    <li>Задай элементу <code>&lt;a&gt;</code>, у которого есть оба атрибута <b>href</b> и <b>target</b> зеленый цвет текста</li>
+    <li>Задай элементу <code>&lt;input&gt;</code> с атрибутом <b>type</b> равным <b>text</b> orange цвет фона</li>
+</ol> */
+[data-description="anchors"] {
+    background-color: gray;
+}
+
+[data-description] {
+    font-size: 24px;
+}
+a[href][target] {
+color: green;
+}
+
+input[type="text"] {
+    background-color: orange;
+}
