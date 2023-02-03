@@ -1,0 +1,19 @@
+/* 
+<ol>
+    <li>Задайте красный фон элементу, у которого одновременно есть два класса <b>super-important</b> и <b>highlighted</b></li>
+    <li>Задайте желтый цвет текста элементам у которых есть хотя бы один из классов <b>highlighted</b> или <b>company-data</b></li>
+    <li>Задайте всем <code>&lt;li&gt;</code> с классом <b>user-data</b> размер шрифта 24px (<code>font-size: 24px;</code>). А потом всем <code>&lt;span&gt;</code> с таким классом установите размер шрифта 10px (<code>font-size: 10px;</code>)</li>
+</ol>
+*/
+.super-important.highlighted {
+    background-color: red;
+}
+.highlighted, .company-data {
+    color: yellow;
+}
+li[super-data] {
+    font-size: 24px;
+}
+li[super-data]span {
+    font-size: 10px;
+}
