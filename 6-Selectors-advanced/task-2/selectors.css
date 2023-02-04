@@ -1,0 +1,29 @@
+/*  
+    <li>Начальный HTML код находится в редакторе, его менять не нужно</li>
+    <li>Задай всем <code>&lt;li&gt;</code> отступ снизу <code>16px</code></li>
+    <li>Задай зеленый фон и белый цвет текста всем элементам нумерованного списка</li>
+    <li>Задай оранжевый фон и белый цвет текста всем элементам НЕнумерованного списка</li>
+    <li>Задай красную границу (<code>border: 3px solid red;</code>) слову <b>Антарктида</b></li>
+    <li>Задай отступ слева 16px всем континентам после Африки</li>
+ */
+ li {
+    margin-bottom: 16px;
+ }
+
+ol li {
+    background-color: green;
+    color: white;
+}
+ul li {
+    background-color: orange;
+    color: white;
+}
+#special > span {
+    border: 3px solid red;
+}
+
+#special ~ li {
+    margin-left: 16px;
+} 
+
+
