@@ -1,0 +1,40 @@
+/* 
+<ol>
+    <li>Установите границы (border: 5px dashed red;) для картинок у который атрибут alt равен <b>Pollution</b></li>
+    <li>Установите отступ слева 50px (<code>margin-left: 50px;</code>) для картинок с расширением <code>.jpg</code></li>
+    <li>Установите серый фон элементов списка, у которых атрибут <b>data-description</b> содержит целое слово (через пробел) <b>even</b></li>
+    <li>Установите размер шрифта 24px (<code>font-size: 24px;</code>) элементам списка, у которых значение атрибута <b>data-description</b> имеет вхождение строки <b>even</b></li>
+    <li>Задайте зеленый цвет всем ссылкам, адрес которых начинается на <b>https://</b>
+    </li><li>Задайте размер шрифта 28px всем элементам <code>&lt;span&gt;</code>, которым установлен английский язык (значение атрибута <b>lang</b> равно en, en-gb, en-us)</li>
+</ol>
+*/
+
+img[alt="Pollution"] {
+    border: 5px dashed red;
+}
+
+img[src$=".jpg"] {
+    margin-left: 50px;
+}
+
+
+li[data-description~="even"] {
+    background-color: gray;
+}
+
+li[data-description*="even"] {
+    font-size: 24px;
+}
+
+a[href^="https://"] {
+    color: green;
+}
+
+
+span[lang|="en"] {
+    font-size: 28px;
+
+}
+
+
+
