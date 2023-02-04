@@ -10,7 +10,7 @@
     margin-bottom: 16px;
  }
 
-ol li {
+ol span {
     background-color: green;
     color: white;
 }
