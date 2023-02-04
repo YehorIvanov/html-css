@@ -6,11 +6,11 @@
     <li>Установите <code>border: 2px solid blue;</code> для тегов <code>&lt;code&gt;</code> которые находятся в теге <code>&lt;h4&gt;</code> элемента списка после элемента с id="special1"</li>
     <li>Задайте размер шрифта равный 24px (<code>font-size: 24px;</code>) всем элементам списка после элемента с id="special2"</li>
 */
-.already-learned ol li {
+.already-learned ol  {
     background-color: green;
     color: white;
 }
-section.to-be-learned ol li {
+section.to-be-learned ol  {
     background-color: orange;
     color: white;
 }
