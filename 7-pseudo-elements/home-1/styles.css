@@ -1,0 +1,25 @@
+/* <ol>
+    <li>Make all "checked" checkboxes have a left margin of 50px (<code>margin-left: 50px</code>)</li>
+    <li>Make the <code>&lt;label&gt;</code> elements all UPPERCASE without changing the HTML (definitely look this one up)</li>
+    <li>Make the first letter of the element with id <code>'special'</code> green and 100px font size (<code>font-size: 100px</code>)</li>
+    <li>Make the <code>&lt;h1&gt;</code> element's color change to blue when hovered over</li>
+    <li>Make the <code>&lt;a&gt;</code> element's that have been visited <code>gray</code></li>
+</ol> */
+
+input[type="checkbox"]:checked {
+    margin-left: 50px;
+}
+label {
+    text-transform: uppercase;
+}
+
+#special::first-letter {
+    color: green;
+    font-size: 100px;
+}
+h1:hover {
+    color: blue;
+}
+a:visited {
+    color: gray;
+}
