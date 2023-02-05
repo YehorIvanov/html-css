@@ -1,0 +1,24 @@
+/*  <li>Задай всем <code>&lt;li&gt;</code> отступ снизу <code>16px</code></li>
+    <li>Задай <code>&lt;span&gt;</code> в первом <code>&lt;li&gt;</code> красный фон и белый шрифт</li>
+    <li>Задай <code>&lt;span&gt;</code> в последнем <code>&lt;li&gt;</code> черный фон и белый шрифт</li>
+    <li>Задай отступ слева 16px четным элементам списка (отступ должен быть для span)</li>
+    <li>Задай серый фон нечетным параграфам внутри <code>&lt;div&gt;</code> с классом <code>&lt;paragraphs&gt;</code></li>   */
+
+li {
+    margin-left: 16px;
+}    
+li:first-child > span {
+    background-color: red;
+    color: white;
+}
+li:last-child > span {
+    background-color: black ;
+    color: white;
+}
+li:nth-child(even) > span {
+    margin-left: 16px;
+}
+.paragraphs p:nth-child(odd) {
+    background-color: gray;
+}
+
