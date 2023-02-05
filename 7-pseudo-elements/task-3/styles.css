@@ -1,0 +1,28 @@
+/*  <ol>
+    <li>Задай первой букве первого параграфа шрифт <code>36px</code>, отступ слева <code>16px</code> и оранжевый цвет</li>
+    <li>Задай первой строке первого параграфа шрифт <code>24px</code></li>
+    <li>Выделенный текст первого параграфа должен иметь красный фон и белый цвет текста</li>
+    <li>Перед всеми ссылками добавь символ <code>&gt;</code> (<b>без пробелов!</b>) зеленого цвета</li>
+    <li>После всех ссылок добавь символ <code>&lt;</code> (<b>без пробелов!</b>) зеленого цвета</li>
+</ol>  */
+ 
+p:first-of-type:first-letter {
+    margin-left: 16px;
+    color: orange;
+    font-size: 36px;
+}
+p:first-of-type::first-line {
+    font-size: 24px;
+}
+
+p:first-of-type::selection{
+    background-color: red;
+}
+a::before {
+    content: ">";
+    color: green;
+}
+a::after {
+    content: "<";
+    color: green;
+}
