@@ -1,0 +1,63 @@
+/*  <ol>
+    <li>Give the <code>&lt;body&gt;</code> element a background of #bdc3c7</li>
+    <li>Make text of <code>&lt;h1&gt;</code> element #9b59b6</li>
+    <li>Make text of all <code>&lt;h2&gt;</code> elements orange</li>
+    <li>Make all <code>&lt;li&gt;</code> elements blue</li>
+    <li>Change the background on every paragraph to be yellow</li>
+    <li>Make all inputs have a <code>3px solid red</code> border</li>
+    <li>Give everything with the class <code>'hello'</code> a white background</li>
+    <li>Give the element with id <code>'special'</code> a <code>2px solid blue</code> border</li>
+    <li>Make all the <code>&lt;p&gt;</code> that are nested inside of divs 25px font</li>
+    <li>Make only inputs with type <code>'text'</code> have a gray background</li>
+    <li>Give both <code>&lt;p&gt;</code> inside the 3rd <code>&lt;div&gt;</code> a yellow background</li>
+    <li>Give the 2nd <code>&lt;p&gt;</code> inside the 3rd <code>&lt;div&gt;</code> a 5px white border</li>
+    <li>Make the <code>&lt;em&gt;</code> in the 3rd <code>&lt;div&gt;</code> element white and 20px font(font-size:20px)</li>  */
+
+    body {
+        background-color: #bdc3c7;
+    }
+    h1 {
+        color:#9b59b6 ;
+    }
+
+h2 {
+    color: orange;
+}
+li {
+    color: blue;
+}
+p {
+    color:yellow;
+}
+input {
+    border: 3px solid red;
+}
+.hello {
+    background-color: white;
+}
+#special {
+    border: 2px solid blue;
+}
+div p {
+    font-size: 25px;
+}
+input[type="text"] {
+    background-color: gray;
+}
+div:nth-of-type(3) p {
+    background-color: yellow;
+}
+div:nth-of-type(3) p:nth-of-type(2) {
+    border: 5px solid white;
+}
+div:nth-of-type(3) em {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
