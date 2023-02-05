@@ -19,7 +19,6 @@
     h1 {
         color:#9b59b6 ;
     }
-
 h2 {
     color: orange;
 }
@@ -27,7 +26,7 @@ li {
     color: blue;
 }
 p {
-    color:yellow;
+    background-color:yellow;
 }
 input {
     border: 3px solid red;
