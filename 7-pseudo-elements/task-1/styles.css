@@ -1,0 +1,40 @@
+/*  <li>Не посещенная ссылка должна быть с белым текстом на черном фоне</li>
+    <li>Посещенная ссылка должна быть с зеленым текстом на оранжевом фоне</li>
+    <li>Кнопка и ссылка при нажатии (активное состояние) должны иметь красную границу (<code>3px solid red;</code>)</li>
+    <li>Ссылка при наведении должна увеличивать размер шрифта до 24px</li>
+    <li>Disabled кнопка должна иметь серую границу и не реагировать на hover(<code>border: 2px dashed grey;</code>)</li>
+    <li>Enabled кнопка должна иметь белый цвет и серый фон при наведении</li>
+    <li>Инпут в фокусе должен иметь оранжевый фон</li>
+    <li>Отмеченный чекбокс должен иметь отступ слева 20px</li> */
+a:link {
+    background-color: black;
+    color:  white;
+}
+a:visited {
+    color: green;
+    background-color: orange;
+}
+.some-button:active, .anchor:active {
+    border: 3px solid red;
+}
+a:hover {
+    font-size: 24px;
+}
+button:disabled {
+    border: 2px dashed grey;
+}
+button:enabled:hover {
+    background-color: gray;
+    color: white;
+}
+input:focus {
+    background-color: orange;
+}
+input[type="checkbox"]:checked {
+    margin-left: 20px;
+}
+
+
+
+
+
