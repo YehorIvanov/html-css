@@ -1,4 +1,14 @@
-div {
+ /* <ol>
+    <li>Элемент с классом <code>static-parent</code> должен иметь статическое позиционирование</li>
+    <li>Элемент с классом <code>relative-parent</code> должен иметь относительное позиционирование. Смести его на <code>20px</code> вниз и на <code>50px</code> вправо относительно изначальной позиции</li>
+    <li>Элемент с классом <code>absolute-parent</code> должен иметь абсолютное позиционирование. Задайте ему отступ снизу <code>20px</code> и справа <code>50px</code></li>
+    <li>Элемент с классом <code>fixed-parent</code> должен иметь фиксированное позиционирование. Задайте ему отступ снизу <code>20px</code> и слева <code>30px</code></li>
+    <li>Читай текст на странице. Там полезная теория ;)</li>
+</ol> */
+ 
+ 
+ 
+ div {
     padding: 16px;
   }
   
@@ -41,3 +51,18 @@ div {
     height: 2000px;
   }
   
+.static-parent {
+    position: static;
+}
+.relative-parent {
+    position: relative;
+   top: 20px;
+   left: 50px;
+}
+.absolute-parent {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+
+
