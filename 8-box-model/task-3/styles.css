@@ -1,0 +1,13 @@
+/* <ol>
+    <li>Нормализуйте стили</li>
+    <li>Создайте последовательно 5 div элементов, с дефолтной высотой и шириной и черным solid border толщиной 3px</li>
+    <li>Текст внутри каждого дива - I am learning box model in CSS!</li>
+    <li>Текст должен быть равноудален от краев div на 50px </li>
+    <li>Цвет фона для всех div - aqua</li>
+</ol> */
+
+div {
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 50px;
+}
