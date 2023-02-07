@@ -13,10 +13,10 @@
 }
 .red {
     background-color: red;
-    float: left;
+    float: right;
 }
 .green {
-    float: right;
+    float: left;
     background-color: green;
 }
 
