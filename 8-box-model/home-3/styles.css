@@ -1,0 +1,42 @@
+/* <ol>
+    <li>Нормализируйте стили на странице через <a href="https://cdnjs.com/libraries/normalize">Normalize.css</a></li>
+    <li>
+        Добавьте на страницу 4 <code>&lt;div&gt;</code> и стилизируйте их так, чтобы получились фигуры, как на <a trget="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson8-task3/task.png">картинке</a>. Цвета и размеры вы найдете на картинке <a trget="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson8-task3/info.png">картинке</a>
+        <br>
+        Подсказки:
+        <ul>
+            <li>Радиус углов прямоугольника 16px</li>
+            <li>Чтобы получить овал, начните с прямоугольника 100 x 50 px</li>
+            <li>Диаметр круга 100px</li>
+            <li>Треугольник имеет 100px у верхнего основания. Высота треугольника  50px</li>
+        </ul>
+    </li>
+</ol> */
+div {
+    margin: 50px;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+ }
+.forestgreen {
+ background-color: forestgreen;
+ border-radius: 16px;
+ 
+}
+.darkmagenta {
+    background-color: darkmagenta;
+    border-radius: 100%;
+
+}
+.aquamarine {
+    background-color: aquamarine;
+    height: 100px;
+    border-radius: 100%;
+
+}
+.brown {
+    border: 50px solid white;
+    border-top: 50px solid brown;
+}
+
+
