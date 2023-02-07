@@ -1,0 +1,29 @@
+/* <ol>
+    <li>Нормализируйте стили на странице через <a href="https://cdnjs.com/libraries/normalize">Normalize.css</a></li>
+    <li>Задайте телу документа фон цвета antiquewhite</li>
+    <li>Добавьте в <code>&lt;body&gt;</code> <code>&lt;div&gt;</code> у которого <code>box-sizing: content-box;</code>. Текст внутри - 'Content Box Sizing'</li>
+    <li>Задайте ему черную solid рамку 8px, внешний отступ 16px и внутренний отступ 16px, ширину 512px, высоту 128px</li>
+    <li>Задайте ему фон цвета aquamarine</li>
+    <li>Добавьте ниже еще один <code>&lt;div&gt;</code> с текстом 'Border Box Sizing'. И присвойте ему <code>box-sizing: border-box;</code></li>
+    <li>Задайте второму диву те же значения <code>height, width, padding, margin</code>, а так же черную solid рамку 8px</li>
+    <li>Задайте ему фон цвета azure</li>
+    <li>Используйте CSS классы и выносите повторяющийся код в отдельный класс.</li>
+</ol> */
+body {
+    background-color: antiquewhite;
+}
+div {
+    border: 8px solid black;
+    margin: 16px;
+    padding: 16px;
+    width: 512px;
+    height: 128px;
+}
+.content-box-div {
+    box-sizing: content-box;
+    background-color: aquamarine;
+}
+.border-box-div{
+    box-sizing: border-box;
+    background-color: azure;
+}
