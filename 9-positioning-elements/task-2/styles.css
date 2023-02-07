@@ -1,0 +1,39 @@
+
+/* <ol>
+    <li>Разместите два элемента с классом <code>.container</code> по горизонтали и дайте каждому по 50% ширины экрана. Не забывайте про свойство <code>box-sizing</code>, которое влияет на рассчет ширины элемента.</li>
+    <li>Опишите классы <code>.red</code> и <code>.green</code>, чтобы расположение этих квадратов соответствовало картинке-примеру.</li>
+    <li>Опишите класс <code>.footer</code>, чтобы задать правильное расположение футеру</li>
+</ol> */
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 50%;
+    float: left;
+}
+.red {
+    background-color: red;
+    float: left;
+}
+.green {
+    float: right;
+    background-color: green;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    background: aquamarine;
+    padding: 16px;
+    
+  }
+
+  footer {
+    height: 30px;
+    border: 2px solid black;
+    clear: both;
+  }
