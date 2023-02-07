@@ -1,0 +1,30 @@
+/* <div class="sc-bf073531-0 dfdpzI"><p>Необходимо создать веб страницу по <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson8-hw3/layout.png">простому макету</a>, используйте padding и margin</p>
+<p>Цвета - blue, yellow, green, pink</p>
+<h4>Основные требования:</h4>
+<ol>
+    <li>Нормализуйте стили</li>
+    <li>Границы прямоугольников 2px solid black</li>
+    <li>Используйте тег <code>&lt;div&gt;</code> для прямоугольников</li>
+</ol>
+<br>
+<p>P.S. Проверка вашего решения может занять до 30 сек</p></div> */
+body{
+    padding: 50px;
+}
+div {
+    border: 2px solid black;
+    padding: 50px;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+
+}
+.inner {
+    background-color: pink;
+}
