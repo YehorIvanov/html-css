@@ -1,0 +1,25 @@
+/* <ol>
+    <li>Нормализируйте стили на странице через <a href="https://cdnjs.com/libraries/normalize">Normalize.css</a></li>
+    <li>Добавьте в тело документа <code>&lt;div&gt;</code> и стилизируйте его так, чтобы он выглядел, как на <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson8-task2/task.png">картинке</a>. Цвета и размеры вы найдете <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson8-task2/info.png">на картинке</a></li>
+    <li>Размер шрифта текста 24px</li>
+</ol> */
+
+
+* {
+    font-size: 24px;
+    box-sizing: border-box;
+}
+div {
+    margin: 50px 100px;
+    background-color: bisque;
+    height: 200px;
+    width: 500px;
+    border-color: firebrick chartreuse burlywood aqua;
+    border-width: 10px 20px;
+    border-style: solid solid dashed dashed;
+    padding: 20px;
+
+
+
+
+}
