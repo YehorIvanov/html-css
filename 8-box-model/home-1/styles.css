@@ -1,0 +1,15 @@
+/* <ol>
+    <li>Нормализуйте стили</li>
+    <li>Создайте последовательно 5 div элементов, в дефолтной высотой и шириной</li>
+    <li>Текст внутри каждого дива - I am learning box model in CSS!</li>
+    <li>Текст должен быть равноудален от краев div на 50px </li>
+    <li>Добавьте каждому div solid border толщиной 3px, цвет фона - aqua</li>
+    <li>Расстояние МЕЖДУ div должно быть по 50px</li>
+</ol>*/
+
+div {
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 50px;
+    margin-bottom: 50px;
+}
