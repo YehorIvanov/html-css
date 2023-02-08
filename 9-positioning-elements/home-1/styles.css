@@ -1,0 +1,32 @@
+/* <p>Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. Для добавления стилей используйте <b>styles.css</b> Результат должен быть как на <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson9-task3/example.jpg">картинке</a></p>
+Основные требования:
+<ol>
+    <li>Высота хедера и футера должна быть 50px. Цвет - yellow и green соответственно.</li>
+    <li><code>&lt;main&gt;</code> cтраницы должен занимать 80% по ширине, <code>.sidebar</code> - остальные 20%. Цвета - pink и grey соответственно. Высота обоих - 500px</li>
+    <li>Опишите класс <code>.footer</code>, чтобы задать правильное расположение футеру</li>
+ */
+.header, .footer {
+    height: 50px;
+}
+.footer {
+    background-color: green;
+    clear: both;
+}
+.header {
+    background-color: yellow;
+}
+.content, .sidebar{
+    height: 500px;
+    float: left;
+}
+.content {
+    width: 80%;
+    background-color: pink;
+}
+.sidebar {
+    background-color: gray;
+    width: 20%;
+
+}
+
+
