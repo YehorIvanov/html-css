@@ -1,0 +1,29 @@
+/* <ol>
+    <li>Высота блоков - <code>200px</code>. По ширине они должны помещаться ровно на ширину экрана</li>
+    <li>Цвета: Блок 1 - <code>red</code>, Блок 2 - <code>green</code>, Блок 3 - <code>blue</code>, Блок 4 - <code>yellow</code>, Блок 5 - <code>black</code></li>
+    <li>Классы блоков должны быть block_red, block_green, block_blue, block_yellow, block_black соответственно</li>
+</ol>
+ */
+ div {
+    height: 200px;
+    width: 20%;
+    /* border: 1px solid black; */
+    float: left;
+    /* box-sizing: border-box; */
+
+ }
+.block_red {
+    background-color: red;
+ }
+.block_green {
+    background-color: green;
+}
+.block_blue {
+    background-color: blue;
+}
+.block_yellow {
+    background-color: yellow;
+}
+.block_black {
+    background-color: black;
+}
