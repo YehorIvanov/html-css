@@ -1,0 +1,89 @@
+/* Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. Для добавления стилей используйте styles.css
+<p>Задача - нарисовать https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-lesson9-hw2/example.jpg">медведя :)
+Основные требования:
+    <li>Нормализуйте стили</li>
+    <li>Добавьте хедер (цвет фона darkturquoise), высота которого 40px. В него поместите тег <code>&lt;nav&gt;</code> с ненумерованным списком - его высота тоже должна быть 40px (элементы: Home, Products, Contacts)</li>
+    <li>Расположите элементы навигации по горизонтали и отцентрируйте их по вертикали. Дайте им внешний отступ слева 16px и белый цвет шрифта.</li>
+    <li>Добавьте <code>&lt;main&gt;</code> (цвет фона beige) с высотой 5000px</li>
+        Добавьте медведя (смотрите прикрепленный скриншот для примера)
+            <li>Голова 200х200px расположена по цетру экрана. Цвет фона - aquamarine</li>
+            <li>Уши 40х60px, цвет brown</li>
+            <li>Глаза 30px в диаметре, цвет grey. Расположены: 80px отступ сверху, 40px по бокам</li>
+    <li>Убедитесь, что хедер приклеен к верху страницы и не скролится с телом документа. При скроле медведь должен прятаться под хедер</li>
+<b>Подсказки:</b>
+    <li>Для выравнивания текста по вертикали в навигации поможет <code>line-height</code></li>
+    <li>Обращайте внимание на стили элемента списка по умолчанию</li>
+    <li>Для выравнивания головы медведя по центру экрана используйте CSS функцию <code>calc</code></li>
+ */
+ html, body {
+    height: 100%;
+    width: 100%;
+
+ }
+.header  {
+    background-color: darkturquoise;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navigation {
+    height: 40px;
+}
+.nav-list {
+    color: white;
+    /* margin: auto; */
+
+}
+.nav-item {
+    display: inline;
+    margin: 0 0 20 16px;
+   
+}
+.content {
+    background-color: beige;
+    height: 5000px;
+    /* position: relative; */
+}
+.head {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    position: relative;
+    top: calc( 50vh - 100px);
+    left: calc(50% - 100px);
+     /* margin: 0 auto; */
+}
+.ear {
+    height: 60px;
+    width: 40px;
+    background-color: brown;
+    position: relative;
+    top: -60px;
+}
+.ear_right {
+    float: right;
+    right: -40px; 
+}
+.ear_left {
+    float: left;
+    left: -40px;
+}
+.eye {
+    border-radius: 100%;
+    background-color: gray;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 80px;
+    display: inline-block;
+}
+.eye_right {
+    left: 40px;
+}
+.eye_left {
+    right: 40px;
+}
+
+
+
