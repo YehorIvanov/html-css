@@ -1,0 +1,48 @@
+/* Результат должен быть как на картинке <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson9/task1/example.jpg">картинке</a></p>
+<ol>
+    <li>Задайте <code>&lt;div&gt;</code> с классом <code>.horizontal</code> высоту 50px и отцентрируйте элементы по вертикали. По горизонтали используйте значение <code>space-around</code></li>
+    <li>Задайте <code>&lt;div&gt;</code> с классом <code>.vertical</code> высоту 200px и разместите элементы в нем по вертикали в колонку. Отцентрируйте элементы по горизонтали. По вертикали используйте значение <code>space-around</code></li>
+</ol>
+<p style="font-weight: bold;">Дополнительные статьи:</p>
+<ul>
+    <li><a href="https://tproger.ru/translations/how-css-flexbox-works/">Как работает CSS Flexbox: наглядное введение в систему компоновки элементов на веб-странице</a></li>
+    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox">MDN: flexbox</a></li>
+*/
+html {
+    font-size: 24px;
+  }
+  div {
+    margin: 16px;
+    border: 1px solid burlywood;
+    display: flex;
+  }
+  .vertical {
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .horizontal {
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .horizontal > span {
+    background-color: aqua;
+  }
+  .vertical > span {
+    background-color: coral;
+  }
+
+
+
+
+
+
+
+
+
+
+
