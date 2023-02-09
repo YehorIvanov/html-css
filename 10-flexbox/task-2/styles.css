@@ -10,15 +10,15 @@ div.block {
   }
 .container {
     display: flex;
-    justify-content: ;
     flex-wrap: wrap;
+    
 }
 
 .block {
     height: 100px;
-    min-width: 100px;
-    flex-shrink: 0;
+    width: 100px;
     flex-grow: 1;
+    
     
 
 }
