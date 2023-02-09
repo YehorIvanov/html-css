@@ -30,17 +30,20 @@
 .navigation {
     height: 100%;
     width: 100%;
-    position: relative;
+    border: 1px solid black;
 }
 .nav-list {
     color: white;
-    position: relative;
-    top: calc(50% - 1.5em);
+    line-height: 40px;
+    margin-top: 0;
+    /* position: relative;
+    top: calc(50% - 1.5em); */
 }
 .nav-item {
     height: 100%;
     display: inline-block;
-    margin-left: 8px;  
+    margin-left: 12px;  
+    
 }
 .content {
     background-color: beige;
