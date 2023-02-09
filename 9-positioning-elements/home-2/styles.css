@@ -35,13 +35,11 @@
     color: white;
     line-height: 40px;
     margin-top: 0;
-    /* position: relative;
-    top: calc(50% - 1.5em); */
 }
 .nav-item {
     height: 100%;
     display: inline-block;
-    margin-left: 14px;  
+    margin-left: 16px;  
     
 }
 .content {
