@@ -40,7 +40,11 @@
     height: 100%;
     display: inline-block;
     margin-left: 16px;  
-    
+}
+.nav-item:nth-child(2) .nav-item:nth-child(3) {
+    height: 100%;
+    display: inline-block;
+    margin-left: 8px;  
 }
 .content {
     background-color: beige;
