@@ -1,0 +1,82 @@
+/* верстаем простую страницу, на которой наглядно можно будет увидеть применения и преимущества <b>flexbox</b></p>
+<p>Результат должен быть как на <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson10/task3/example.png">картинке</a>, детальное описание требований смотри ниже</p>
+    <li>Высота хедера - <code>40px</code>, цвет - <code>yellow</code>. В хедер добавлена горизонтальная навигация, элементы навигации отцентрированы по вертикали. Добавлены отступы <code>16px</code> между элементами навигации и от левого края</li>
+    <li><code>&lt;main&gt;</code> cтраницы должен занимать все свободное пространство между хедером и футером</li> 
+    <li>Блок слева - тег <code>&lt;section&gt;</code>, цвет - <code>pink</code>. В блок добавлен <code>&lt;h2&gt;</code> с текстом <b>I can use Flexbox!!!</b> и размещен по центру блока. Блок занимает все доступное пространство</li>
+    <li>Блок справа - сайдбар, цвет - <code>grey</code>, тег <code>&lt;aside&gt;</code>. Должен занимать ровно <code>200px</code> по ширине. В блок добавлен <code>&lt;h2&gt;</code> с текстом <b>News</b> и текст отцентрирован по горизонтали. Заголовку установлены внешние вертикальные отступы по <code>16px</code>. Ниже заголовка добавлен список новостей с высотой линии <code>40px</code>. Для элементов списка задан отступ слева <code>16px</code></li>
+    <li>Высота футера - <code>40px</code>, цвет - <code>green</code>. В футер добавлен текст <b>Footer</b> и отцентрирован внутри футера с помощью <code>margin</code></li>
+    <li>Страница отображается на весь экран и выглядит как в макете, использованы семантические теги
+<h4>Подсказки и типичные ошибки:</h4>
+     <li>Для списка нужно удалить дефолтные внутренние и внешние отступы. Это стандартная практика</li>  */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: stretch;
+
+}
+header {
+    background-color: yellow;
+    width: 100%;
+    height: 40px;
+
+}
+nav {
+    height: 100%;
+    display: flex;
+
+}
+nav ul {
+    padding: 0;
+    align-items: auto;
+    margin: 0 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 16px;
+    line-height: 40px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+}
+section {
+    background-color: pink;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside {
+    background-color: gray;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+aside h2 {
+    margin: 16px auto;
+}
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 40px;
+} 
+aside li {
+    margin-left: 16px;
+}
+footer{
+width: 100%;
+background-color: green;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
