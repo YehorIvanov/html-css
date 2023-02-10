@@ -1,0 +1,36 @@
+/* Отобрази 5 блоков разных цветов, в одной строке. Используй flexbox для расположения и задания ширины блоков</p>
+<h4>Основные требования:</h4>
+<ol>
+    <li>Высота блоков - <code>300px</code>. По ширине они должны помещаться ровно на ширину экрана</li>
+    <li>Цвета: Блок 1 - <code>red</code>, Блок 2 - <code>green</code>, Блок 3 - <code>blue</code>, Блок 4 - <code>yellow</code>, Блок 5 - <code>black</code></li>
+    <li>Классы блоков должны быть block_red, block_green, block_blue, block_yellow, block_black соответственно</li>
+</ol>
+<br>
+<p>ВАЖНО! Данную задачу проверяй ТОЛЬКО через ссылку на решение с github</p>
+<p>P.S. Проверка решения может занять до 30 сек</p></div> */
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+div {
+    flex-grow: 1;
+    height: 300px;
+}
+.block_red {
+    background-color: red;
+}
+.block_green {
+    background-color: green;
+}
+.block_blue {
+    background-color: blue;
+}
+.block_yellow {
+    background-color: yellow;
+}
+.block_black {
+    background-color: black;
+}
+
