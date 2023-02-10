@@ -12,7 +12,15 @@
 header {
     display: flex;
     justify-content: center;
+    
+}
+.articles-list {
     flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+
+
 }
 .article {
     margin: 8px;
@@ -20,8 +28,7 @@ header {
     display: block;
     background-color: bisque;
     flex-basis: 300px;
-
-
+    flex-grow: 1;
 }
 
 
