@@ -33,11 +33,14 @@ nav ul {
     padding: 0;
     align-items: auto;
     margin: 0 0;
+    list-style-type: none;
+    
 }
 nav ul li {
     display: inline;
     margin-left: 16px;
     line-height: 40px;
+    
 }
 main {
     display: flex;
