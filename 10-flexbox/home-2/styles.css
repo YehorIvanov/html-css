@@ -1,0 +1,29 @@
+/* <li>Настрой страницу так, чтобы ширина элементов рассчитывалась по рамке</li>
+    <li>Выровняй текст в хедере горизонтально по центру</li>
+    <li>Задай всем элементам <code>.article</code> внешние отступы <code>8px</code> и внутренние <code>16px</code>. Цвет фона - <code>bisque</code>. <code>.article</code> должен остаться блочным элементом (ему <code>display: flex;</code> не нужен)
+    </li>
+    <li>При изменении ширины экрана статьи могут растягиваться по ширине, но не должны сжиматься меньше <code>300px</code></li>
+    <li>Для ширины <code>.article</code> используй <code>flex-basis</code>. Это аналог <code>width</code> для флекс контейнеров, его использование является лучшей практикой</li>    
+    <li>Элементы, которые не помещаются в текущую строку должны переноситься на следующую  */
+
+    * {
+        box-sizing: border-box;
+    }
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.article {
+    margin: 8px;
+    padding: 16px;
+    display: block;
+    background-color: bisque;
+    flex-basis: 300px;
+
+
+}
+
+
+
+
