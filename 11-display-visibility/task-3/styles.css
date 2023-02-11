@@ -1,0 +1,16 @@
+/* В этой задаче тебе предстоит реализовать выпадающее меню. Тут сможешь отлично попрактиковаться с свойством <code>display</code>, рассматренным в уроке
+<p>Результат должен быть как на картинках <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/display-visibility/task3/sample-1.png">first.png</a> и <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/display-visibility/task3/sample-2.png">after-hover.png</a></p>
+    <li>Всему дропдауну <code>.dropdown</code> задан внешний отступ <code>16px</code></li>
+    <li>Для кнопки <code>.menu-button</code> установлены внутренние отступы <code>16px</code>, цвет фона <code>darkgreen</code>, прозрачность <b>0.8</b> (<code>opacity: 0.8</code>) по-умолчанию. При наведении, устанавливается прозрачность <b>1</b>. Размер шрифта - <code>16px</code>, цвет шрифта - <code>белый</code>. Используется курсор - pointer</li>
+    <li>По-умолчанию, меню <code>.menu-list</code> должно быть спрятано и показываться только при наведении мыши на элемент с текстом 'Hover me'</li>
+    <li>Списку меню обнулены все дефолтные отступы, задан цвет фона <code>lightcyan</code>, цвет текста <code>black</code> и добавлена тень (<code>box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2)</code>). Минимальная ширина выпадающего меню должна быть <code>120px</code>. Задан <code>z-index 1</code>, чтобы меню выпадало над остальным контентом</li>
+    <li>Элементы списка дожны иметь внутренние отступы <code>16px</code>. Убраны точки перед элементами списка. При наведении мыши элементы списка дожны менять фон на <code>ghostwhite</code></li>
+<h4>Подсказки и типичные ошибки:</h4>
+    <li>Внимательно следи за стилями, которые пишешь для кнопки <code>.menu-button</code> и дропдауна <code>.dropdown</code>, не пиши все стили для дропдауна</li>
+    <li><code>.dropdown</code> не должен занимать весь экран, помни что по-умолчанию div это блочный элемент</li>
+    <li>К <code>.menu-button</code> должны корректно применяться падинги и марджины, помни что что по-умолчанию span это инлайновый элемент</li>        
+    <li>Для корректного отображения выпадающего списка не забывай про позиционирование</li>  
+    <li>В данной задаче не нужно использование <code>top</code>, <code>right</code>, <code>bottom</code> или <code>left</code> отспутов</li>
+    <li>Навешивай hover на правильные элементы, тут он нужен отдельно для <code>.dropdown</code>, <code>.menu-button</code> и <code>.menu-item</code> </li>   
+</ul>
+<p>P.S. Проверка кода по HTML/CSS может занять до 30 сек</p></div> */
