@@ -16,7 +16,7 @@
     <li>Перевод на англ. отобрази курсивом (тег <code>em</code>) и серым цветом (<code>grey</code>) */
 html {
     font-family: Roboto, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
     body {
     margin: 32px;
