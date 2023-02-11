@@ -14,3 +14,42 @@
     <li>Навешивай hover на правильные элементы, тут он нужен отдельно для <code>.dropdown</code>, <code>.menu-button</code> и <code>.menu-item</code> </li>   
 </ul>
 <p>P.S. Проверка кода по HTML/CSS может занять до 30 сек</p></div> */
+* {
+    box-sizing: border-box;
+}
+div.dropdown {
+    margin: 16px;
+    display: inline-block;
+}
+.menu-button {
+    padding: 16px;
+    background-color: darkgreen;
+    opacity: 0.8;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+.menu-button:hover {
+    opacity: 1;
+}
+.menu-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    z-index: 1;
+    color: black;
+}
+.dropdown:hover .menu-list {
+    display: block;
+}
+.menu-item {
+    margin: 16px;
+    list-style-type: none;
+}
+.menu-item:hover {
+    background-color: ghostwhite;
+}
