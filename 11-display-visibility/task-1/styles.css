@@ -3,3 +3,10 @@
     <li><code>&lt;div&gt;</code> с текстом <b>Hidden</b> не отображается, но под него резирвируется место на странице</li>
     <li><code>&lt;div&gt;</code> с текстом <b>Visible</b> отображается на своем месте</li>
     <li>Все три блока на странице отображаются учитывая display/visibility друг друга</li>    */
+    .container div:nth-child(1){
+        display: none;
+    }
+    .container div:nth-child(2) {
+        visibility: hidden;
+    }
+    
