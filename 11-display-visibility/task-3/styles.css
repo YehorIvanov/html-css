@@ -48,7 +48,7 @@ div.dropdown {
     display: block;
 }
 .menu-item {
-    margin: 16px;
+    padding: 16px;
     list-style-type: none;
 }
 .menu-item:hover {
