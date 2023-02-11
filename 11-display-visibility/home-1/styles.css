@@ -1,0 +1,25 @@
+/* оздайте тултип, который будет появляться при наведении курсора мыши на текст.</p>
+<p>Результат должен быть как на картинке <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson11/hw1/example.png">картинке</a></p>
+    <li>Стартовый HTML в редакторе ниже</li>
+    <li>Нормализируйте CSS</li>
+    <li>Тултип сделайте тегом <code>&lt;span&gt;</code> c классом <code>tooltip</code> а основной текст тегом <code>&lt;div&gt;</code> c классом <code>text</code></li>
+    <li>Сделайте внешний отступ для <code>&lt;div&gt;</code> 16px. Добавьте нижнее подчеркивание <code>1px dotted black</code>. Обратите внимание на ширину текста.</li>
+    <li>Тултип должен иметь <code>grey</code> фон, белый цвет текста, 4px радиус границы, внутренние отступы 8px, отступать вниз от текста <b>Hover over me</b> (<code>bottom: -40px;</code>)</li>*/
+
+.text {
+    margin: 16px;
+    border-bottom: 1px dotted black;
+    display: inline-block;
+}
+.tooltip {
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    top: 40px;    
+    display: none;
+}
+.text:hover .tooltip {
+    display: block;
+}
