@@ -1,0 +1,47 @@
+/* адай всему содержимому страницы внешние отступы <code>32px</code></li> 
+    <li>Подключи шрифт Roboto (выбери насыщенность 400 и 900) и установите его для всей страницы. Вторым по приоритету пускай будет sans-serif. Размер шрифта 18px.</li>
+    <li>Задай заголовку расстояние между словами <code>20px</code>, отобразите по центру страницы и заглавными буквами.</li>
+    <li>Задай параграфам высоту строки <code>28px</code></li>
+        Слова HTML и CSS (которые в начале параграфов) нужно:
+            <li>выделить "Жирным"</li>
+            <li>задать расстояние между буквами <code>3px</code></li>
+            <li>размер шрифта <code>24px</code></li>
+            <li>прозрачность 80%</li>
+            <li>подчеркнуть линией</li>
+    <li>Убери подчеркивание со ссылки</li>
+    <li>Перевод на англ. отобрази курсивом (тег <code>em</code>) и серым цветом (<code>grey</code>)*/
+html {
+    margin: 32px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+body {
+}
+h1 {
+    word-spacing: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+p {
+    line-height: 28px;
+}
+b {
+    letter-spacing: 3px;
+    font-size: 24px;
+    opacity: 80%;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+em {
+    color: gray;
+    
+}
+
+
+
+
+
+
+
