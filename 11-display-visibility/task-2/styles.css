@@ -1,0 +1,34 @@
+/* <
+    <li>Всем <code>&lt;div&gt;</code> внутри <code>articles</code> задана высота <code>100px</code> и ширину <code>150px</code>. Цвет фона - <code>beige</code>, внешние отступы <code>16px</code>. Все <code>&lt;div&gt;</code> размещены в одну строку</li>
+    <li><code>&lt;div&gt;</code> с классом <code>.visible-text</code> не обрезает текст (весь текст виден)</li>
+    <li><code>&lt;div&gt;</code> с классом <code>.cropped</code> обрезает текст, что не поместился без возможности скроллить</li>
+    <li><code>&lt;div&gt;</code> с классом <code>.both-scrolls</code> обрезает текст, что не поместился. При этом появляются оба скролла - вертикальный и горизонтальный. Курсор для дива задан - <code>all-scroll</code></li>
+    <li><code>&lt;div&gt;</code> с классом <code>.vertical-scroll</code> обрезает текст, что не поместился. Появиться должен только вертикальный скролл. Курсор для дива задан - <code>all-scroll</code></li> */
+.articles {
+    display: flex;
+
+}
+.articles div {
+    height: 100px;
+    width: 150px;
+    background-color: beige;
+    margin: 16px;
+}
+.visible-text {
+    overflow: visible;
+}
+.cropped {
+    overflow: hidden;
+}
+.both-scrolls {
+    cursor: all-scroll;
+    overflow: scroll;
+}
+.vertical-scroll {
+    overflow-y: scroll;
+    cursor: all-scroll;
+}
+
+
+
+
