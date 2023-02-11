@@ -10,12 +10,11 @@
             <li>подчеркнуть линией</li>
     <li>Убери подчеркивание со ссылки</li>
     <li>Перевод на англ. отобрази курсивом (тег <code>em</code>) и серым цветом (<code>grey</code>)*/
-html {
+
+body { 
     margin: 32px;
     font-family: Roboto, sans-serif;
     font-size: 18px;
-}
-body {
 }
 h1 {
     word-spacing: 20px;
@@ -25,7 +24,8 @@ h1 {
 p {
     line-height: 28px;
 }
-b {
+b { 
+    font-weight: 900;
     letter-spacing: 3px;
     font-size: 24px;
     opacity: 80%;
@@ -35,8 +35,9 @@ a {
     text-decoration: none;
 }
 em {
+    font-style: italic;
     color: gray;
-    
+
 }
 
 
