@@ -42,6 +42,7 @@ div.dropdown {
     min-width: 120px;
     z-index: 1;
     color: black;
+    position: absolute;
 }
 .dropdown:hover .menu-list {
     display: block;
