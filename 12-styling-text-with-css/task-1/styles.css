@@ -37,7 +37,7 @@ a {
     text-decoration: none;
 }
 .translation {
-    font-style: italic;
+    /* font-style: italic; */
     color: grey;
 }
 
