@@ -1,0 +1,27 @@
+/*  <li>Задайте документу шрифт <code>Verdana</code></li>
+    <li>Текст хедера должен быть 74px, занимать половину ширины страницы и располагаться по центру по горизонтали. Должен обрезаться с помощью троеточия</li>
+    <li>Задайте элементу <code>&lt;div&gt;</code> высоту 200px и цвет фона coral</li>
+    <li>Задайте тексту внутри <code>&lt;div&gt;</code> белый цвет, отрисуйте его заглавными буквами, отцентрируйте его по горизонтали</li>
+    <li>Задайте тексту внутри <code>&lt;div&gt;</code> высоту строки 200px</li> */
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    font-size: 74px;
+    width: 50vw;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: auto;
+
+}
+div {
+    background-color: coral;
+    height: 200px;
+    color: white;
+    line-height: 200px;
+    text-align: center;
+}
