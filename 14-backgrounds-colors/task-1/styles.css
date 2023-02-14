@@ -1,0 +1,29 @@
+/*  <li>Нормализовать стили с помощью <b>normalize.css</b></li>
+    <li>Элементу <code>&lt;div&gt;</code> необходимо задать ширину <code>300px</code> и высоту <code>500px</code></li>
+    <li>Установить картинку <a href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/task1/nature.jpeg" target="_blank">nature.png</a> как фон, при этом картинка должна размещаться по центру и обрезаться по горизонтали (справа и слева). По высоте картинка должна точно соответствовать высоте элемента</li>
+    Тексту задать:</p>
+            <li>Размер шрифта <code>32px</code></li>
+            <li>Насыщенность текста равную 700</li>
+            <li>Цвет шрифта должен быть белым</li>
+            <li>Отступ сверху <code>32px</code></li>
+            <li>Разместить текст по центру блока (<code>text-align: center;</code>)</li>
+            <li>Использовать <code>border-box</code></li>
+
+    <li>Для пути картинки используй URL с условия, а не свой локальный путь (!)</li>    
+</ol> */
+* {
+    box-sizing: border-box;
+}
+div {
+    height: 500px;
+    width: 300px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/task1/nature.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    padding: 32px;
+    text-align: center;
+}
+
