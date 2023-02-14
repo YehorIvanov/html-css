@@ -1,0 +1,16 @@
+/* <ol>
+    <li>Добавьте на страницу <code>&lt;div&gt;</code> с классом <code>icon</code></li>
+    <li>Нормализовать стили с помощью <b>normalize.css</b></li>
+    <li>Сделайте наружные отступы 100px для элемента</li>
+    <li>Используйте картинку Youtube из первой строчки по умолчанию</li>
+    <li>Используйте картинку Youtube из второй строчки при наведении */
+    .icon {
+        margin: 100px;
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/task2/sprites.png);
+        height: 100px;
+        width: 100px;
+        background-position-x: -200px;
+    }
+    .icon:hover {
+        background-position-y: 100px;
+    }
