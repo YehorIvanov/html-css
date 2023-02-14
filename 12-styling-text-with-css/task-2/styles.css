@@ -11,14 +11,17 @@ html {
 
 h1 {
     font-size: 74px;
-    width: 50vw;
+    width: 50%;
+    overflow: hidden;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: auto;
+    text-align: center;
 
 }
 div {
+    text-transform: uppercase;
     background-color: coral;
     height: 200px;
     color: white;
