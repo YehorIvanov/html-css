@@ -1,0 +1,19 @@
+/*  Задача - закрасить текст с помощью градиента
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+    <li>Нормализуем CSS</li>
+    <li>Обнулить внешние отступы и задать внутренние 16px для заголовка</li>
+    <li>Разместить текст в центре по горизонтали и отобразить в UPPERCASE</li>
+    <li>Шрифт - <b>Arial</b>, насыщенность - 700, размер шрифта - 96px</li>
+    <li>Цвет шрифта должен быть градиентом от желтого к красному под углом 45 градусов */
+    h1 {
+        margin: 0;
+        padding: 16px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 96px;
+        font-weight: 700;
+        background-image: -webkit-linear-gradient(45deg, #ffff00, #ff0000);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
