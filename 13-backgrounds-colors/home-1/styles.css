@@ -5,6 +5,9 @@
     <li>Каждая картинка должна иметь марджин <code>16px</code></li>
     <li>Стили для бордера - <code>1px dotted grey</code></li>*/
 
+    * {
+        box-sizing: border-box;
+    }
     .gallery {
         display: flex;
 
