@@ -1,0 +1,35 @@
+/*  Нормализуйте стили и установите box-sizing по границе</li>
+    <li>Добавьте на страницу <code>&lt;div&gt;</code> с классом <code>.image-container</code> и отступом 50px сверху и снизу. В него поместите картинку <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg">big.jpeg</a>. Разместите ее посередине страницы. Картинка должна уменьшаться при уменьшении экрана, но не растягиваться больше своего оригинального размера. Скруглите углы на 20px</li>
+    <li>Добавьте <code>&lt;div&gt;</code> с классом <code>.gallery</code> (<code>display: flex;</code>). В него добавьте 3 карточки с классами <code>.card</code>. Каждая карточка содержит картинку <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg">small.jpg</a> и подпись (используйте теги <code>&lt;figure&gt;</code> и <code>&lt;figcaption&gt;</code>). Высота подписи 30px, текст должен быть посередине и в нижнем регистре.</li>
+    Каждая карточка (изображение + подпись) должна иметь внешний отступ 16px и тень <code>box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);</code>
+    
+        <p>Добавьте фильтры картинкам в том порядке, как видите на примере</p>
+        <ol>
+            <li><code>filter: opacity(50%);</code></li>
+            <li><code>filter: blur(4px);</code></li>
+            <li><code>filter: invert(100%);</code></li>
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+.image-container {
+    margin: 50px auto;
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.main-image {
+    display: block;
+    max-width: 100%;
+    border-radius: 20px;
+    
+
+}
