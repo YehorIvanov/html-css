@@ -1,0 +1,14 @@
+/*  Нормализуй CSS</li>
+    <li>Добавь на страницу видео. Как источник используй файл <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task2/example.mp4">example.mp4</a>. Используй тег <code>source</code></li>
+    <li>Установи постером картинку <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task2/poster.jpg">poster.jpg</a></li>
+    <li>Задай ширину <code>500px</code></li>
+    <li>Размести видео по центру и добавь отступ сверху <code>200px</code></li>
+    <li>Добавь контролы, чтобы можно было воспроизвести видео */
+body {
+    display: flex;
+}
+    .video-box {
+    width: 500px;
+    margin: 200px auto;
+    justify-content: center;
+}
