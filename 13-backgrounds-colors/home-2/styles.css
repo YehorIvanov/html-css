@@ -1,0 +1,10 @@
+/* спользуйте текстуру <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw2/background.jpg">background.jpg</a> для заполнения фона тела документа</p>
+<p>Результат должен быть, как на картинке <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw2/example.jpg">example.jpg
+    <li>Установите <code>&lt;body&gt;</code> повторяющуюся картинку как фон</li>
+    <li>Это все ;)</li>
+    <li>А, и стили не забудьте нормализовать */
+
+    body {
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw2/background.jpg);
+    }
+    
