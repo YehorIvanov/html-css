@@ -1,0 +1,10 @@
+/* Измените цвет фона <code>&lt;div&gt;</code> на blueviolet</li>
+    <li>Задайте первой букве параграфа зеленый цвет и размер шрифта 24px */
+
+.rectangle{
+    background-color: blueviolet !important;
+}
+p.text::first-letter {
+    color: green;
+    font-size: 24px;
+  }
