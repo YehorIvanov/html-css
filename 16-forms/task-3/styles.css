@@ -1,0 +1,40 @@
+/* Чекбокс стилизировать непросто. В этой задаче мы сделаем это самым простым, примитивным способом</p>
+<p>Визуализация задания <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson16/task3/example.jpg">в этом файле</a></p>
+<p>Начальный HTML код находится в редакторе. HTML должен оставаться неизменным. Для добавления стилей используй <b>styles.css</b></p>
+<h4>Основные требования:
+Тебе понадобиться относительный (relative) контейнер (дай ему класс <code>.checkbox</code>), который станет точкой отсчета для имитированного чекбокса. Сделай внутренний отступ слева <code>35px</code>, где потом разместиться чекбокс. Размер шрифта <code>24px</code>, внешний отступ 16px</li>
+<li>Спрячь настоящий чекбокс</li>
+<li>Стилизуй подменный чекбокс и разместите его относительно контейнера
+<li><code>25px x 25px</code></li>
+<li>цвет фона - <code>#d3d3d3</code> в неактивном состоянии</li>
+<li>цвет фона - <code>#006400</code> в активном состоянии</li>
+<li>Задай стили имитированному чекбоксу в состоянии <code>checked</code>
+<h4>Подсказки:</h4>
+<li>Убедись, что у чекбокса есть горизонтальные и вертикальные margin. Помним, что у инлайновых элементов нету вертикальных маргинов */
+
+.checkbox {
+    position: relative;
+    padding-left: 35px;
+    font-size: 24px;
+    margin: 24px;
+    display: block;
+}
+input[type="checkbox"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.checkmark {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #d3d3d3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+
+}
+.checkbox input:checked + .checkmark {
+    background-color: #006400;
+}
