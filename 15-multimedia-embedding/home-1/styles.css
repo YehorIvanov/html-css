@@ -1,0 +1,44 @@
+/* Блок с надписью <b>Later I'll do something</b> разместите ровно по центру картинки. А картинку отцентрируйте по горизонтали</li>
+    <li><a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/hw1/big.jpeg">Картинка</a> не должна растягиваться больше своей оригинальной ширины. Но должна сжиматься, если не помещается на экран по ширине.</li>
+    Стили карточки с надписью:
+            <li>ширина - 200px, высота - 50px</li>
+            <li>Цвет фона -  bisque;</li>
+            <li>шрифт - 12px в uppercase, насыщенность - 700</li>
+            <li>карточка должна быть полупрозрачной (opacity: 0.5;) по умолчанию, но менять opacity на 1 при наведении курсора. Курсором установите pointer</li>
+    <li>Добавьте картинке описание в атрибут <b>alt</b> (текст на ваше усмотрение). Не забываем, что это обязательный атрибут.</li>
+    <li><code>.image-button</code> позиционируйте абсолютно и управляйте расположением с помощью <code>top: calc(50% - 25px); left: calc(50% - 100px);</code>, где проценты относятся к размерам контейнера, а пиксели - к размерам самой <code>.image-button</code> */
+
+    body {
+        width: 100%;
+
+    }
+    .image-container {
+        position: relative;
+        
+    }
+    .image {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+    .image-button {
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 100px);
+        width: 200px;
+        line-height: 50px;
+        background-color: bisque;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    .image-button:hover {
+        opacity: 1;
+    }
