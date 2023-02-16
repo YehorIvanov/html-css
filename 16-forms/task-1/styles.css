@@ -1,0 +1,22 @@
+/* Для начала работы с формами, создадим простую форму :)</p>
+<p>Визуализация задания в <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson16/task1/example.png">файле</a></p>
+<h4>Основные требования:</h4>
+    <li>Нормализуй стили
+Добавь сдедующие контролы в форму. Элементы форм являются строчными, оберни каждый контрол в <code>&lt;div&gt;</code>, чтобы каждый занимал отдельную строку. Дивам дай внешний отступ <code>16px</code>
+<li>Текстовый инпут с именем <b>lastName</b> и значением <b>Emerson</b></li>
+<li>Инпут <code>type="number"</code> с именем <b>age</b> и значением <b>17</b></li>
+<li>Чекбокс с именем <b>agree</b> и текстом <b>Accept terms and conditions</b>. Текст чекбокса должен быть в <code>label</code></li>
+<li>Радиокнопки с именем <b>gender</b> и опциями <b>Male</b>, <b>Female</b>, <b>Secret</b>. <code>div</code> с радиокнопками обозначьте классом <code>.choose-gender</code>. Каждая радиокнопка должна быть в HTML в отдельной строке. Текст радиокнопок должен быть в <code>label</code></li>
+<li>Textarea с именем <b>description</b> и плейсхолдером <b>Write description...</b></li>
+<li>Добавьте кнопку с типом <b>submit</b> и текстом <b>Submit</b></li>*/
+
+
+.control-box {
+    margin: 16px;
+}
+
+
+
+
+
+
