@@ -1,0 +1,46 @@
+/* Чтобы отшлифовать навыки работы с форматми, создадим громадную форму, со всеми возможными типами инпутов</p>
+<p>Визуализация задания <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson16/hw2/example.jpg">в файле</a></p>
+<p>Добавь на страницу форму с перечисленными ниже инпутами. Пусть каждый инпут занимает отдельную строку   Основные требования:  
+<li>Нормализуй стили</li>
+<li>Каждый инпут должен занимать отдельную строку</li>    
+<li>Для формы задай внешние отступы <b>32px</b>, а для инпутов - <b>8px</b></li>
+<li>Текстовый инпут с именем <b>primaryLanguage</b> и значением <b>HTML</b>, должен быть <b>disabled</b></li>
+<li>Чекбокс с именем <b>agree</b>, должен быть не активен (unchecked)</li>
+<li>Чекбокс с именем <b>like</b>, должен быть активен и доступен только для чтения</li>
+<li>Инпут для цвета с именем <b>favouriteColor</b> и значением <b>#ff7f50</b></li>
+<li><code>date</code> инпут с именем <b>birthDate</b> и значением <b>2021-01-02</b></li>
+<li><code>datetime-local</code> инпут с именем <b>birthTime</b> и значением <b>2024-10-04T13:02</b></li>
+<li><code>email</code> инпут с именем <b>email</b> и плейсхолдером <b>example@domain.com</b>. Поле обязательное</li>
+<li><code>file</code> инпут с именем <b>avatar</b></li>
+<li><code>month</code> инпут с именем <b>startLearning</b> и значением <b>2020-01</b></li>
+<li><code>number</code> инпут с именем <b>favouriteNumber</b> и значением <b>17</b></li>
+<li><code>textarea</code> с именем <b>story</b>, у которой 5 строк по 30 символов и плейсхолдер "A long time ago..."</li>
+<li>Поле для ввода пароля с именем <b>password</b> и значением <b>secret</b></li>
+<li>Радиокнопки с именем <b>language</b> и опциями
+<li>значение - <b>html</b> и текстом <b>HTML</b></li>
+<li>значение - <b>сss</b> и текстом <b>CSS</b>. Этот чекбокс должен быть выбран</li>
+<li>значение - <b>javascript</b> и текстом <b>JavaScript</b>
+Радиокнопки оберни в элемент с классом <code>languages</code>
+<li>Поле <code>range</code> с именем <b>learningProgress</b> и значением <b>30</b></li>
+<li><code>select</code> с именем <b>framework</b> и опциями
+<li>значение - <b>react</b> и текстом <b>React</b></li>
+<li>значение - <b>jquery</b> и текстом <b>jQuery</b>. Этот селект должен быть выбран</li>
+<li>значение - <b>bootstrap</b> и текстом <b>Bootstrap</b>
+<li><code>search</code> инпут с именем <b>search</b> и плейсхолдером "Type first letters..."
+<li><code>time</code> инпут с именем <b>lunchEnd</b> и значением <b>14:01</b></li>
+<li><code>url</code> инпут с именем <b>website</b> и плейсхолдером <b>https://website.com</b>. Нужно сделать инпут обязательным для заполнения</li>
+<li><code>week</code> инпут с именем <b>birthWeek</b> и значением <b>2021-W51</b> </li>
+<li><code>submit</code> <b>кнопка</b> с текстом <b>Save</b></li>
+<li>Не забываем про <b>box-sizing: border-box;
+<h4>Полезные статьи:</h4>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">[MDN] Типы инпутов  */
+
+* {
+    box-sizing: border-box;
+}
+form {
+    margin: 32px;
+}
+.input-wraper {
+    margin: 8px;
+}
