@@ -37,9 +37,11 @@
 
 * {
     box-sizing: border-box;
+    background-color: bisque;
 }
 form {
     margin: 32px;
+    
 }
 .input-wraper {
     margin: 8px;
