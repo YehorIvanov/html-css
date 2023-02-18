@@ -40,7 +40,8 @@
     margin-bottom: 8px;
 }
 .form-label {
-    margin-bottom: 81px;
+    margin-bottom: 4px;
+    display: block;
 }
 .form-input {
     width: 100%;
