@@ -1,0 +1,46 @@
+/* В этой задаче отрисуем шахматную доску</p>
+<p>Визуализацию задания <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson17/hw1/example.png">смотри тут</a></p>
+<h4>Основные требования:</h4>
+<li>Начальный HTML код находится в редакторе. Его редактировать не нужно. Для добавления стилей используй <b>styles.css</b></li>
+<li>Не забываем про box-sizing</li>
+<li>Ширина и высота ячейки должна быть <code>50px</code>. Для всей таблицы внешний отступ <code>16px</code></li>
+<li>Обрати внимание на то, в каком порядке расположены черные и белые ячейки (!)</li>
+<li>Текст расположен по центру ячейки</li>
+<li>Ячейки по периметру не имеют границ и с белым фоном */
+
+* {
+    box-sizing: border-box;
+}
+table{
+    text-align: center;
+    margin: 16px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr {}
+td {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+}
+tr:nth-child(even) td:nth-child(odd), tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+    
+    
+    
+    
+}
+tr:nth-child(1) td:nth-child(even), tr:nth-child(10) td:nth-child(odd) {
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
+tr:nth-child(even) td:nth-child(1), tr:nth-child(odd) td:nth-child(10) {
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+tr:nth-child(odd) {
+
+}
