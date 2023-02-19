@@ -9,7 +9,7 @@
 <li>Ячейки по периметру не имеют границ и с белым фоном */
 
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 table{
     text-align: center;
