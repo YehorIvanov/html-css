@@ -27,7 +27,7 @@ tr {
 td, th{
     border: 1px solid black;
     padding: 4px;
-    line-height: 32.5px;
+    line-height: 31.5px
 }
 thead {
     background-color: aqua;
