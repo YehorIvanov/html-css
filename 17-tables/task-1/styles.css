@@ -1,0 +1,28 @@
+/*  Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson17/task1/example.png">example.png</a></p>
+    Основные требования:
+    <li>Нормализуйте стили</li>
+    <li>Добавьте таблицу в тело документа и добавьте ей заголовок, тело и футер. Таблица должна иметь 500px в ширину (помним про box-sizing) и внешний отступ 16px</li>
+    <li>Таблице сделайте одинарные границы (black, 1px), и задайте ячейкам внутренний отступ 4px</li>
+    <li>Текст во всех ячейках сдвиньте вправо</li>
+    <li>Добавьте подпись к таблицу с текстом <b>Shopping list</b></li>
+    Содержание таблицы смотрите на примере. Первая строка - хедер таблицы, последняя - ее футер.
+    Обратите внимание, что в футере первая ячейка занимает 3 места */
+* {
+    box-sizing: border-box;
+}
+div {
+    overflow-x: auto;
+}
+table {
+    width: 500px;
+    margin: 16px;
+    border: 1px solid black;
+    text-align: right;
+    border-collapse: collapse;
+
+}
+td, th{
+    border: 1px solid black;
+    padding: 4px;
+
+}
