@@ -17,6 +17,7 @@ table {
     text-align: right;
     border-collapse: collapse;
     box-sizing: border-box;
+    line-height: 40px;
 }
 tr {
     line-height: 40px;
