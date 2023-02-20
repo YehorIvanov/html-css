@@ -1,0 +1,14 @@
+/* Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/hw1/example.jpg">example.jpg</a></p>
+<p>Будьте внимательны с версией Font Awesome. Следите, чтобы документация и подключаемая версия совпадали</p>
+<p>Основные требования:
+<li>Нормализуйте стили</li>
+<li>Используйте библиотеку Font Awesome верисии 4
+<li>Документация <a href="https://fontawesome.com/v4.7.0/">здесь</a></li>
+<li>Добавьте на страницу иконки Font Awesome. Ccылку для подключения ищите <a href="https://cdnjs.com/libraries/font-awesome/4.7.0">здесь</a></li>
+<p>Разместите 5 иконок по горизонтали в таком порядке</p>
+<li><code>fa-battery-full</code> с размером шрифта 16px</li>
+<li><code>fa-battery-three-quarters</code> с размером шрифта 32px</li>
+<li><code>fa-battery-half</code> с размером шрифта 64px</li>
+<li><code>fa-battery-quarter</code> с размером шрифта 128px</li>
+<li><code>fa-battery-empty</code> с размером шрифта 256px</li>
+<li>Иконки по горизонтали расположите со свойством <b>space-around */
