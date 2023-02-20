@@ -1,0 +1,50 @@
+/* Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task2/example.png">example.png</a></p>
+<p>Будьте внимательны с версией Font Awesome. Следите, чтобы документация и подключаемая версия совпадали</p>
+<p>Основные требования:
+<li>Нормализуйте стили</li>
+<li>Используйте библиотеку Font Awesome версии 5</li>
+<li>Добавьте на страницу иконки Font Awesome. Ccылку для подключения ищите <a href="https://cdnjs.com/libraries/font-awesome">здесь</a></li>
+<li>Документация <a href="https://fontawesome.com/">здесь</a></li>
+<p>Добавьте две кнопки. Каждой дайте внешний отступ 64px. Задайте стили:
+<li>Ширина - 200px, высота - 50px</li>
+<li>Содержимое кнопки должно располагаться по центру. Здесь постарайтесь обойтись без Flexbox</li>
+<li>Цвет фона - coral, цвет шрифта - white</li>
+<li>Радиус углов - 4px</li>
+<li>Текст трансформируйте в заглавные буквы. Шрифт - <code>'Courier New', Courier, monospace;</code>. Насыщенность шрифта - 700</li>
+<li>Уберите с кнопки обводку и границу</li>
+<li>Задайте курсор - pointer</li>
+<li>При наведении мыши цвет текста должен меняться на darkcyan</li>
+<li>В первую кнопку добавьте svg из файла <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task2/bird.svg">bird.svg</a>. Задайте иконке размеры 32x32 px. Закрасьте в белый цвет. Убедитесь, что она отцентрирована по вертикали. При наведении мыши иконка должна становиться цвета green</li>
+<li>После иконки следует текст <b>Catch the bird</b></li>
+<li>Во второй кнопке должен быть текст <b>Create account</b> перед которым иконка <b>fa-id-card</b> из <b>Font Awesome</b> библиотеки. Используйте <code>solid</code> иконку (с классом <code>fas</code>) */
+
+.custom-button {
+    margin: 64px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    line-height: 50px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+.custom-button:hover {
+    color: darkcyan;
+}
+.custom-button svg {
+    height: 32px;
+    width: 32px;
+    fill: white;
+    vertical-align: middle;
+}
+.custom-button svg:hover {
+    fill: green;
+}
