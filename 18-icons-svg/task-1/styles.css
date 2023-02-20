@@ -1,0 +1,25 @@
+/* Сравним растровое изображение в формате <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png">.png</a> с <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg">.svg</a> форматом</p>
+<p>Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/example.png">example.png</a></p>
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Основные требования:</p>
+<li>Строка должна занимать всю ширину, а колонки делить всю ширину пополам.</li>
+<li>Большую картинку разместите под маленькой и отцентрируйте их по горизонтали внутри колонки</li>
+<li>Маленькая картинка должна быть 64х64 px</li>
+<li>Большая картинка должна быть 320х320 px */
+body {}
+.row {
+    display: flex;
+}
+.column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.small-bird {
+    width: 64px;
+    height: 64px;
+}
+.large-bird {
+    width: 320px;
+    height: 320px;
+}
