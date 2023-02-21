@@ -1,0 +1,61 @@
+/* Cтраницы любого веб-приложения или сайта иногда могут загружаться дольше обычного. Добавим в центре страницы индикатор загрузки, чтобы пользователь понимал, что загрузка страницы в процессе</p>
+<p>Визуализация задания<a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson20/hw1/example.png"> в этом файле</a>. Начальный HTML код находится в редакторе. Его модифицировать не нужно. Для добавления стилей используй <b>styles.css</b>
+<h4>Основные требования:</h4>
+<li>Используя Flexbox размести <code>.spinner</code> и его элементы по центру экрана (помним про величины <code>vh</code>, <code>vw</code>)
+<li>Тексту спиннера задай шрифт <code>monospace</code>, размер шрифиа 16px и верхний регистр</li>
+<li>Установи тексту анимацию <code>blinking</code> (изменение прозрачности 0 на 0%, 1 на 50%, 0 на 100%) c интервалом 2s, бесконечными повторениями и линейным изменением</li>
+<p>Для крутящегося кольца (<code>.circle</code>):</p>
+<li>Размер <code>50 x 50px</code>, помним про <code>box-sizing</code></li>
+<li>Граница - <code>4px</code>, <code>lightgrey</code> со всех сторон, сверху - <code>black</code></li>
+<li>Отступ снизу - 8px</li>
+<li>Анимация - линейная и интервалом 2s. Используй соответствующую трансформацию*/
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.spinner {
+    margin: auto;
+}
+.spinner-text {
+    font-family: monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    animation: blinking 2s infinite linear;
+
+}
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    border: 4px solid lightgrey;
+    border-top: 4px solid black;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    from { 
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+
+
