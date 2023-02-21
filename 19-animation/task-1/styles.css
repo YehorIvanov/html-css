@@ -1,0 +1,47 @@
+/* Применяем плавное изменение CSS свойств</p>
+<p>Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson19/task1/example.png">example.png</a></p>
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Основные требования:</p>
+<ol>
+<li>Задайте контейнеру внешний отступ 32px, а всем квадратам нижний отступ 16px.</li>
+<li>Как бы там ни было, не забываем про <code>box-sizing</code></li>
+<li>Фон квадрата сделайте <code>coral</code>, а текст внутри отцентрируйте. Прозрачность квадратов по умолчанию равна 0.5</li>
+<li>Квадратам задайте ширину и высоту 100px. При наведении (hover) на квадрат, его ширина должна вырасти до 100% за 2s, а прозрачность измениться на 1 за 0.5s</li>
+<li>Используйте timing-function в соответствии с текстом внутри квадрата */
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 32px;
+}
+.rect {
+    margin-bottom: 16px;
+    background-color: coral;
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+}
+.rect:hover {
+    width: 100%;
+    opacity: 1;
+    transition: width 2s, opacity 0.5s ;
+}
+.linear {
+    transition-timing-function: linear;
+}
+.ease {
+    transition-timing-function: ease;
+}
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+
+
+
