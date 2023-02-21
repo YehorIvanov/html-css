@@ -1,0 +1,59 @@
+/* Добавьте на страницу блок, который плавно появляется с верхнего края экрана - модальное окно.</p>
+<p>Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson19/hw2/example.png">example.png</a></p>
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Основные требования:
+<li>Не забываем про <b>box-sizing: border-box;
+<p>Тексту в блоке:
+<li>Шрифт - Arial, Helvetica, sans-serif</li>
+<li>Размер шрифта - 14px</li>
+<li>Насыщенность шрифта - 700</li>
+<li>Цвет шрифта - white</li>
+<li>в верхнем регистре</li>
+<li>по центру блока</li>
+<p>Блоку задайте:</p>
+<li>Ширину 250px, высоту - 100px</li>
+<li>Радиусы углов 10px</li>
+<li>Цвет фона <b>coral</b></li>
+<li>Расположение в центре по горизонтали</li>
+<li>Блок должен анимировать свойство <b>top</b> от -100px до середины экрана <b>calc(50vh - 50px)</b>. Длительность анимации - 2s. Анимация описывается функцией <b>ease</b></li>
+<li>Блок должен остаться в своем конечном положении после анимации (свойство <code>animation-fill-mode</code>) */
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: coral;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    line-height: 100px;
+    animation: move 2s  ease;
+    position: absolute;
+    
+    
+
+}
+@keyframes move {
+    from {
+        top: -100px;
+    }
+    to {
+        top: calc(50vh - 50px);
+    }
+}
+
+
+
+
