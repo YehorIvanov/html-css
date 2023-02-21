@@ -1,0 +1,60 @@
+/* Разместите по центру страницы анимированный индикатор загрузки</p>
+<p>Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson19/hw1/example.png">example.png</a></p>
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Основные требования
+<li>Используя Flexbox разместите <code>.spinner</code> по центру экрана (помним про величины <code>vh</code>, <code>vw</code>)</li>
+<li>Тексту спиннера задайте шрифт <code>monospace</code>, размер шрифиа 16px и верхний регистр</li>
+<li>Установите тексту анимацию <code>blinking</code> c интервалом 2s и бесконечными повторениями</li>
+<li>Установите тексту анимацию <code>blinking</code> c интервалом 2s и бесконечными повторениями и линейным изменением</li>
+<li>Квадратик под текстом должен быть черного цвета, 10px в ширину и 4px в высоту, с радиусом углов 2px</li>
+<li>Задайте ему обе анимации  - moving и blinking. По горизонтали он должен анимировать сначала вправо, потом перемещаться влево. Длительность анимации 2s бесконечное к-во повторений<*/
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.spinner{}
+.spinner-text {
+    font-family: monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    animation: blinking 2s linear infinite;
+    /* animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+.rect {
+    background-color: black;
+    width: 10px;
+    height: 4px;
+    border-radius: 2px;
+    animation: moving 2s linear infinite ;
+    /* animation: blinking 2s linear infinite; */
+}
+
+
+
+
+
+@keyframes moving {
+    from {
+      left: 0;
+      opacity: 1;
+    }
+    to {
+      left: 70px;
+    }
+  }
+
+  @keyframes blinking {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
