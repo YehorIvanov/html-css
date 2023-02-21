@@ -7,6 +7,18 @@
 <li>Поверните на 45deg</li>
 <li>Увеличьте в 1.5 раза*/
 
+* {
+    box-sizing: border-box;
+  }
+  
+  p {
+    margin: 0 32px;
+    padding: 8px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  
 .square {
     width: 100px;
     height: 100px;
