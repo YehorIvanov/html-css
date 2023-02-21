@@ -1,0 +1,15 @@
+/* С помощью CSS трансформаций измените положение и форму элемента</p>
+<p>Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson20/task1/example.png">example.png</a></p>
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+<h4>Основные требования:
+<li>Задайте квадрату ширину и высоту по 100px, цвет фона <b>tomato</b></li>
+<li>Сместите квадрат на 200px вправо и на 100px вниз</li>
+<li>Поверните на 45deg</li>
+<li>Увеличьте в 1.5 раза*/
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transform: translate(200px, 100px) rotate(45deg) scale(1.5);
+}
