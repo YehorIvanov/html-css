@@ -1,0 +1,55 @@
+/* Перемещаем квадрат с помощью CSS анимации</p>
+<p>Начальный HTML код находится в редакторе ниже. Его можно модифицировать. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Основные требования:
+<li>Нормализуйте стили</li>
+<li>Квадрату задайте ширину и высоту по 100px. Фон - coral.</li>
+<li>Двигаться он должен сначала круг по часовой стрелке (4s), потом обратно против часовой (4s)</li>
+<li>Траектория движения - квадрат 300х300px.</li>
+
+<p>Цвет квадрата должен плавно меняться в процессе движения
+<li>coral - левый верхний угол</li>
+<li>cornflowerblue - правый верхний угол</li>
+<li>aqua - правый нижний угол</li>
+<li>yellowgreen - левый нижний угол</li> */
+
+.square {
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+    animation: move 4s;
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: initial;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: coral;
+    }
+    20% {
+        top: 0px;
+        left: 300px;
+        background-color: cornflowerblue;
+    }
+    40% {
+        top: 300px;
+        left: 300px;
+        background-color: aqua;
+    }
+    80% {
+        top: 300px;
+        left: 0px;
+        background-color: yellowgreen;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: coral;
+    }
+}
+
+
+
