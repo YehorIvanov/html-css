@@ -61,6 +61,7 @@ main {
     white-space: nowrap;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    vertical-align: middle;
 }
 .nav-list-link {
     
