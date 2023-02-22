@@ -38,11 +38,12 @@ body {
 h1 {
     text-align: center;
 }
-.main {
+main {
     display: flex;
+
 }
-.navigaton {
-    width: 20%;
+.navigation {
+    max-width: 20%;
     padding: 0.5em;
 }
 .nav-list {
@@ -55,17 +56,18 @@ h1 {
     line-height: 2em;
     margin-bottom: 0.5em;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .nav-list-link {
     padding-left: 0.5em;
     padding-right: 0.5em;
     color: white;
     text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+ 
 }
 .section {
-    width: 60%;
+    max-width: 60%;
     padding: 0.5em;
     font-size: 1.25em;
 }
@@ -82,9 +84,9 @@ h1 {
     font-weight: 700;
     font-size: 1.25em;
 }
-.nevs {
-    width: 20%;
-    padding: 05em;
+.news {
+    max-width: 20vw;
+    padding: 0.5em;
 }
 .footer {
     background-color: #e5e5e5;
