@@ -1,0 +1,51 @@
+/* <Создайте страничку с текстом и картинкой, которые будут подстраиваться под ширину экрана.
+Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson21/task2/example-400px.png">example-400px.png</a> для ширины экрана и <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson21/task2/example-1200px.png">example-1200px.png</a> для ширины 1200px
+Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. Для добавления стилей используйте <b>styles.css</b></p>
+<p><b>Основные требования:
+<li><code>box-sizing</code> ;)</li>
+<li>Документ должен занимать всю страницу по высоте и ширине</li>
+<li>Галерея должна занимать 80% по ширине и иметь цвет фона <code>#fa5</code></li>
+<li>Колонка с идеями должна занимать 20% и иметь цвет фона <code>#5af</code></li>
+<li>Картинка должна располагаться по центру секции и растягиваться не больше своего оригинального размера. Добавьте ей тень <code>0px 3px 5px 0px rgba(0,0,0,0.75)</code></li>
+<li>Идея должна располагаться по центру секции. Задайте шрифту белый цвет <code>#fff</code> цвет и насыщенность 700. Отобразите заглавными буквами и сделайте внутренние отступы 4px. Если при сужении окна текст не помещается, то должен обрезаться двоеточием.*/
+* {
+    box-sizing: border-box;
+}
+.content {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+.gallery {
+    width: 80%;
+    background-color: #fa5;
+    display: flex;
+}
+.image {
+    max-width: 100%;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.ideas {
+    background-color: #5af;
+    width: 20%;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px;
+
+}
+.idea {
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    
+}
+
+
+
