@@ -50,7 +50,6 @@ main {
 .nav-list {
     list-style-type: none;
     padding: 0;
-    margin: o;
 }
 .nav-list-item {
     background-color: #808080;
@@ -81,13 +80,14 @@ main {
     font-size: 5vw;
 }
 .units-list {
-    line-height: 1.75em;
+    
 }
 .css-units {
     background-color: #e5e5e5;
     color: #8b0000;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.125em;
+    line-height: 1.75em;
 }
 .news {
     width: 20%;
