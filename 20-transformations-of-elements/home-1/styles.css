@@ -50,7 +50,7 @@
     margin-bottom: 8px;
     border-radius: 50%;
     animation: rotate 2s infinite linear;
-    margin: 0 auto;
+    
 }
 @keyframes rotate {
     from { 
