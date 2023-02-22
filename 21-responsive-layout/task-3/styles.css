@@ -49,6 +49,7 @@ main {
 .nav-list {
     list-style-type: none;
     padding: 0;
+    margin: o;
 }
 .nav-list-item {
     background-color: #808080;
