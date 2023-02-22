@@ -80,6 +80,7 @@ main {
     font-size: 5vw;
 }
 .units-list {
+    line-height: 1.75em;
     
 }
 .css-units {
@@ -87,7 +88,7 @@ main {
     color: #8b0000;
     font-weight: 700;
     font-size: 1.125em;
-    line-height: 1.75em;
+   
 }
 .news {
     width: 20%;
