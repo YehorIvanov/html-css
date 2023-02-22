@@ -1,0 +1,31 @@
+html {
+    font-size: 18px;
+}
+.font-in-px {
+    font-size: 27px;
+}
+..font-in-em {
+    font-size: 1.5em;
+}
+.font-in-vw {
+    font-size: 5vw;
+}
+..font-in-persents {
+    font-size: 150%;
+}
+..font-in-rem {
+    font-size: 1.5rem;
+}
+
+/* <div class="sc-bf073531-0 dfdpzI"><p>Начальный HTML код находится в редакторе ниже. Его редактировать не нужно. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Используйте разные величины для установки размера шрифта. Обратите внимание, как влияет вложенность на итоговый размер шрифта при использовании относительных величин. Нету единой "правильной" величины. Нужно знать, как работает каждая и использовать в их для решения соответствующих задач
+<p>Основные требования:
+<li>Подключите <code>normalize.css</code></li>
+<li>Элементу <code>&lt;html&gt;</code> задайте размер шрифта 18px</li>
+<li>Элементы с классом <code>.font-in-px</code> должны иметь размер шрифта <code>27px</code></li>
+<li>Элементы с классом <code>.font-in-em</code> должны иметь размер шрифта <code>1.5em</code></li>
+<li>Элементы с классом <code>.font-in-vw</code> должны иметь размер шрифта <code>5wv</code></li>
+<li>Элементы с классом <code>.font-in-percents</code> должны иметь размер шрифта <code>150%</code></li>
+<li>Элементы с классом <code>.font-in-rem</code> должны иметь размер шрифта <code>1.5rem</code></li>
+<p style="font-weight: bold;">Полезные статьи:</p>
+<li><a target="_blank" href="https://medium.com/@stasonmars/%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B-%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2-css-%D0%BF%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%B8-vs-em-vs-rem-vs-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%BD%D1%82%D1%8B-vs-viewport-%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D1%8B-7a24cd792b74">Размеры шрифтов CSS. Пиксели vs Em vs Rem vs Проценты vs Viewport единицы</a><*/
