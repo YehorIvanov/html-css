@@ -1,0 +1,59 @@
+/* В этом задании нужно создать адаптивный макет. Он будет подстраиваться под ширину экрана. Сам макет простой, но зато мы активно попрактикуемся с брейкпоинтами и разберемся что к чему</p>
+<p>Визуализация задания в файлах <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson22/task2/599px.png">599px</a>, <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson22/task2/899px.png">899px</a> и <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson22/task2/1200px.png">1200px</a> для разной ширины экрана</p>
+<h4>Основные требования:</h4>
+Добавь на страницу 3 блока:
+<li>Блок c цветом фона <code>#ff7f50</code> и текстом <b>Navigation</b></li>
+<li>Блок c цветом фона <code>#006400</code> и текстом <b>Products List</b></li>
+<li>Блок c цветом фона <code>#0ff</code> и текстом <b>News</b></li>
+<li>Текст каждого блока должен быть в нижнем регистре, шрифт - <code>Verdana</code>, иметь отступ <code>8px</code>, цвет фона <code>#faebd7</code>, радиус углов - <code>4px</code></li>
+<li>Высота каждого блока при любом расположении должна равняться <code>200px</code></li>
+<li>При ширине экрана до <code>600px</code> блоки располагаются один под другим в колонку</li>
+<li>При ширине экрана от <code>600px</code> до <code>899px</code> - новости должны располагаться под остальными двумя блоками и занимать всю ширину. Навигация и список продуктов делят экран ровно (!) пополам</li>
+<li>При ширине экрана <code>900px</code> и больше - все три секции должны располагаться в одну линию горизонтально и занимать ровно (!) по <code>1/3</code> ширины экрана
+<p>Обрати внимание: эта задача решалась в уроке, но там была допущена небольшая ошибка - при ширине экрана <code>900px</code>, блоки не занимают ровно по <code>1/3</code> ширины экрана. В своем решение исправь это</p>
+<h4>Подсказки и типичные ошибки:</h4>
+<li>Что бы сделать блоки одинаковыми по ширине, недостаточно их растянуть <code>flex-grow</code>. Нужно так же дать им сжиматься. Поэтому лучше использовать       свойство <code>flex</code> вместо <code>flex-grow</code> */
+
+.main {
+}
+.products {}
+.navigation {
+    background-color: #ff7f50;
+    flex: 2 2;
+}
+.products-list {
+    background-color: #006400;
+    flex: 2 2 ;
+}
+.news {
+    background-color: #0ff;
+}
+.text {
+    font-family: Verdana, Geneva, sans-serif;
+    text-transform: lowercase;
+    background-color: #faebd7;
+    padding: 8px;
+    border-radius: 4px;
+    margin: auto;
+}
+.products-list, .news, .navigation {
+    height: 200px;
+    display: flex;
+}
+@media screen and (min-width:600px) {
+    .products {
+        display: flex;
+    }    
+}
+@media screen and (min-width:900px) {
+    .main {
+        display: flex;
+    }
+    .news {
+        flex: 1 1;
+    }
+    .products {
+        flex: 2 2;
+    }
+    
+}
