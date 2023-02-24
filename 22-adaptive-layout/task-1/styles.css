@@ -1,0 +1,43 @@
+/* <div class="sc-bf073531-0 dfdpzI"><p>Меняйте отображение и положение блоков на странице в зависимости от размера и положения экрана</p>
+<p>Начальный HTML код находится в редакторе ниже. Его редактировать не нужно. Для добавления стилей используйте <b>styles.css</b></p>
+<p>Основные требования:</p>
+<li>Как всегда, не забываем про <code>box-sizing</code></li>
+<li>Расположите <code>.container</code> по центру экрана</li>
+<li>Квадратам задайте ширину и высоту по 100px и внешние отступы 8px</li>
+<li>Цвет фона квадратов должен быть <code>#8a2be2</code> при ширине 600px и больше. <code>#ff7f50</code> в противном случае</li>
+<li>Квадраты должны располагаться по горизонтали в landscape (горизонтальное положение экрана) и вертикально в portrait</li>
+Полезные статьи:
+<li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/Media_Queries/Using_media_queries">[MDN] - Использование медиа-запросов
+</a></li><li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/@media">[MDN] - Media types и Media Features</a> */
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    background-color: #ff7f50;
+}
+@media screen and (orientation:landscape)  {
+    .container {
+        flex-direction: row;
+        
+    }
+}
+@media screen and (min-width: 600px)  {
+
+    .square {
+        background-color: #8a2be2;
+    }
+
+}
