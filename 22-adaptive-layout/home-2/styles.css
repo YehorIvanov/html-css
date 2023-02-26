@@ -1,0 +1,139 @@
+/* <div class="sc-bf073531-0 dfdpzI"><p>Напишем страницу сайта, которая будет адаптивной под разные устойства. Визуализация задания в файлах: <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson22/hw2/599px.png">600px</a>, <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson22/hw2/900px.png">900px</a>, <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson22/hw2/1200px.png">1200px</a></p>
+<p>Нужно добавить изображение на главной секции и сделать так, чтобы страница подстраивалась под ширину экрана</p>
+<p>За основу возьми разметку и стили из своего решения к <a target="_blank" href="/courses/html5-css3/tasks/2577">этой задаче</a></p>
+<h4>Основные требования:
+<li>Добавь изображение под хедером. При ширине экрана до <code>600px</code> должна отображаться картинка <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/small.png">small.png</a>, а при <code>600px</code> и больше - <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png">big.png</a></li>
+<li>Картинки должны растягиваться по ширине, но не больше своей оригинальной ширины. Дай картинке тень <code>0px 4px 8px 0px rgba(0, 0, 0, 0.2)</code></li>
+<li>При ширине экрана до <code>600px</code> все секции должны располагаться одна под другой в колонку и занимать всю ширину каждая</li>
+<li>При ширине экрана <code>600px</code> и до <code>1200px</code> - навигация и основная секция должны быть в одной строке. При чем навигация должна занимать <code>20%</code> ширины, а все остальное - основная секция. Новости должны располагаться под первыми двумя и растягиваться на всю ширину</li>
+<li>При ширине экрана <code>1200px</code> и больше - три секции должны располагаться в одну линию. Навигация должна занимать <code>20%</code> ширины экрана, основная секция - <code>60%</code>, новости - <code>20%</code></li>
+</ol>
+<p>P.S. Проверка кода по HTML/CSS может занять до 30 сек</p></div> */
+
+/* <div class="sc-bf073531-0 dfdpzI"><p>Сделаем простую страницу сайта. Тут нам и практика с responsive и со всеми темами, которые выучили до этого. Визуализация задания для ширины экрана 600px - <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson21/hw1/600px.png">тут</a>, для 1200px - <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/courses/front-end/lessons/html5-css3/lesson21/hw1/1200px.png">тут</a></p>
+<h4>Основные требования:</h4>
+<li>Разметка задана в редакторе, ее менять не нужно</li>
+<li>Не забываем нормализовать стили и старый добрый <code>box-sizing</code></li>
+<li>Документу (тегу <code>&lt;html&gt;</code>) задай шрифт <code>Verdana</code>, цвет шрифта <code>#555</code> и размер шрифта <code>16px</code></li>
+<li><b>Заголовок</b> сделай белого цвета и размести по центру. Используй стандартные размеры тега <code>&lt;h1&gt;</code>. Цвет фона - линейный градиент под углом 60 градусов от <code>red</code> до <code>orange</code></li>
+<li><b>Футер</b> должен быть прижат к нижней части страницы. И это не <code>position: fixed</code>;) Используй <b>flexbox</b>. Цвет фона <code>#e5e5e5</code>. Внутренние отступы <code>0.5em</code></li>
+<b>Основная часть:
+<li>Навигация, средняя секция и новости имеют внутренние отступы по <code>0.5em</code> и занимают по ширине соответственно <code>20%</code>, <code>60%</code> и <code>20%</code></li>
+<li>Размер шрифта содержимого основной секции установи в <code>1.25em</code></li>
+<li>Список в основной секции должен иметь высоту линии <code>1.75em</code></li>
+<li>Элементы <code>.css-units</code> должны иметь <code>#8b0000</code> цвет шрифта и <code>#e5e5e5</code> цвет фона. Размер шрифта должен быть в <code>1.125</code> больше текущего и иметь насыщенность <code>700</code></li>
+<li>Заголовку <code>.section__header</code> задай размер шрифта равный 5 процентам от ширины окна браузера и размести его по центру</li>
+<li>Из списка в навигации убери стандартные <b>падинги</b> и точки перед элементами списка</li>
+<li>Каждый элемент списка навигации имеет <code>#808080</code> цвет фона, <code>белый</code> шрифт, и высоту линии <code>2em</code>. Отступ снизу между элементами меню - <code>margin-bottom: 0.5em</code></li>
+<li>Ссылка должна занимать <b>весь!</b> элемент навигации. Текст ссылки должен отступать от края элемента на <code>0.5em</code> (внутренние отступы по горизонтали)</li>
+<li>Ссылка должна быть без стандартного подчеркивания и белого цвета</li>
+<li>При уменьшении ширины, текст ссылки не должен выходить за границы элемента меню и в конце должно появляться троеточие */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #555;
+    font-size: 16px;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    color: white;
+    background-image: linear-gradient(60deg, red, orange);
+}
+h1 {
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-grow: 1;
+    
+}
+.navigation {
+    width:  20%;
+    padding: 0.5em;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+.nav-list-item {
+    background-color: #808080;
+    color: white;
+    line-height: 2em;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}
+.nav-list-link {
+    
+    color: white;
+    text-decoration: none;
+ 
+}
+.section {
+    width:  60%;
+    padding: 0.5em;
+    font-size: 1.25em;
+    
+}
+.section__header {
+    text-align: center;
+    font-size: 5vw;
+}
+section picture img {
+    max-width: 100%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.units-list {
+    line-height: 1.75em;
+    
+}
+.css-units {
+    background-color: #e5e5e5;
+    color: #8b0000;
+    font-weight: 700;
+    font-size: 1.125em;
+   
+}
+.news {
+    width: 20%;
+    padding: 0.5em;
+}
+.footer {
+    background-color: #e5e5e5;
+    padding: 0.5em;
+    text-align: center;
+}
+@media screen and (max-width:599px) {
+    .main {
+        flex-direction: column;
+    }
+    .navigation, .section, .news {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1199px) {
+    .main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+     .section{
+        width: 80%;
+    }
+    .news {
+        width: 100%;
+    }
+}
+
+
