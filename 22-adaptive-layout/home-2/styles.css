@@ -115,14 +115,6 @@ section picture img {
     padding: 0.5em;
     text-align: center;
 }
-@media screen and (max-width:599px) {
-    .main {
-        flex-direction: column;
-    }
-    .navigation, .section, .news {
-        width: 100%;
-    }
-}
 @media screen and (max-width:1199px) {
     .main {
         flex-direction: row;
@@ -135,5 +127,14 @@ section picture img {
         width: 100%;
     }
 }
+@media screen and (max-width:599px) {
+    .main {
+        flex-direction: column;
+    }
+    .navigation, .section, .news {
+        width: 100%;
+    }
+}
+
 
 
