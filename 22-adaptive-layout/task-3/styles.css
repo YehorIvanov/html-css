@@ -1,0 +1,19 @@
+/* Отображайте разные изображения при разной ширине экрана</p>
+<p>Визуализация задания в файле <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/example-399.jpg">example-399.jpg</a> &amp; <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/example-600.jpg">example-600.jpg</a>
+</p><p>Основные требования:</p>
+<li>При ширине экрана 400px и меньше показывайте картинку <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/small.jpg">small.jpg</a></li>
+<li>При ширине экрана больше 400px отображайте только изображение <a target="_blank" href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/big.jpeg">big.jpeg</a></li>
+<li>Отцентрируйте изображение по горизрнтали и сделайте так, чтобы оно подстраивалось под доступную ширину экрана, но не растягивалось больше своей орининальной ширины</li>
+<li>Высота картинки должна подстраиваться так, чтобы картинка сохраняла пропорции и не искажала изображение</li>
+<li>Свойство <code>max-width</code> применяйте к тэгу <code>img</code>, а не <code>picture</code></li>
+<p style="font-weight: bold;">Полезные статьи:
+<li><a target="_blank" href="https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/">Как выбрать брейкпоинты</a></li>
+<li><a target="_blank" href="https://html5book.ru/css3-mediazaprosy/#part6">CSS3-медиазапросы< */
+
+body{
+    display: flex;
+}
+picture {
+    margin: auto;
+    max-width: 100%;
+}
