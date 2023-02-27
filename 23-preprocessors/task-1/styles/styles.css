@@ -15,6 +15,7 @@
   color: #fff;
 }
 .header__navigation .nav-list__item {
+  cursor: pointer;
   background-color: #ff7f50;
   padding: 8px;
   margin-left: 8px;
