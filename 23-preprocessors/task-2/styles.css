@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .square {
+  height: 100px;
+  width: 100px;
+  margin: 8px;
+  color: #ff7f50;
+}
+
+/*# sourceMappingURL=styles.css.map */
