@@ -9,6 +9,8 @@
 // <p>ВАЖНО! Данную задачу проверяйте ТОЛЬКО через ссылку на ваше решение с github</p>
 // <p>P.S. Проверка вашего решения может занять до 30 сек</p></div>
 
+@import 'breakpoints.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -24,12 +26,26 @@ body {
     @media screen and (orientation:portrait) {
         flex-direction: column;
      }
-    .square {
-        height: 100px;
-        width: 100px;
-        margin: 8px;
-        color: #ff7f50;
-            
-    }
 }
- 
+.square {
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+    
+@include for-extra-small {
+    background-color: #ff7f50;
+}
+@include for-medium-up{
+    background-color: #8a2be2;
+}
+@include for-large-up {
+    background-color: #a61;
+}
+@include for-extra-large {
+    background-color: #c47;
+}
+
+
+
+        
+}
