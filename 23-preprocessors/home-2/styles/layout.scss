@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    @media screen and (orientation:landscape)  {
+        flex-direction: row;
+    }
+}
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    background-color: #ff7f50;
+    @media screen and (min-width: 600px)  {
+        background-color: #8a2be2;
+    } 
+}
