@@ -11,18 +11,18 @@ nav {
 
 .menu {
   padding: 0;
+  margin: 0;
   list-style-type: none;
-  margin-left: 3em;
-  text-transform: uppercase;
-  line-height: 100%;
-  align-items: center;
+  cursor: pointer;
   color: white;
+  line-height: 3em;
+  text-transform: uppercase;
+  margin-left: 3em;
   display: flex;
 }
 .menu__item {
   padding: 0 8px;
   line-height: 3em;
-  cursor: pointer;
 }
 .menu__item:hover {
   background-color: #9acd32;
@@ -35,23 +35,25 @@ nav {
 }
 
 .submenu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  cursor: pointer;
+  color: white;
+  line-height: 3em;
+  text-transform: uppercase;
   display: none;
   position: absolute;
   top: 3em;
   flex-direction: column;
-  padding: 0;
   margin-left: 8px;
-  list-style: none;
   min-width: 120px;
-  line-height: 3em;
   background-color: #ff7f50;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .submenu__item {
   padding: 0 8px;
-  color: white;
-  cursor: pointer;
 }
 .submenu__item:hover {
   color: black;
