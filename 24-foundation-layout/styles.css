@@ -18,10 +18,45 @@ body {
   height: 62px;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .header__button {
+  background-color: #3040C4;
+  color: #fff;
+  width: 160px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  border: none;
+  border-radius: 2px;
+}
+
+.navigation {
+  justify-self: end;
   margin-left: auto;
+  margin-top: 7px;
+  margin-right: 56px;
+}
+.navigation__item {
+  color: #2B292D;
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.navigation__item_selected {
+  font-weight: 700;
+}
+.navigation__item:last-of-type {
+  margin-right: 0;
+}
+.navigation__arrow {
+  height: 5px;
+  width: 8px;
+  margin-left: 11px;
+  display: inline-block;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 
 .logo {
@@ -33,11 +68,10 @@ body {
   line-height: 25px;
   color: #2B292D;
   justify-content: center;
-  margin-left: 15px;
+  margin-left: 9px;
 }
 .logo__img {
   height: 60px;
-  width: 60px;
 }
 .logo__name {
   font-weight: 700;
@@ -46,6 +80,10 @@ body {
 .logo__description {
   font-size: 18px;
   opacity: 0.6;
+}
+
+.footer-links {
+  height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
