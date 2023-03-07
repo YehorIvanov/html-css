@@ -1,7 +1,65 @@
 
 .footer {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-navigation {
+        height: 338px;
+        width: 1140px;
+        margin: 0 auto; 
+    }
+    &__description {
+        width: 360px;
+        line-height: 26px;
+        font-size: 18px;
+        color: #2B292D;
+        opacity: 0.6;
+        margin-top: 26px;
+    }
+    &-links {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 1140px;
+    }
+    &-terms {
+        display: flex;
+        align-items: center;
+        &__item {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 22px;
+            color: #2B292D;
+            opacity: 60%;
+            padding-right: 19px;
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+    }
+    &__line {
+        margin: 0;
+        border: none;
+        width: 100%;
+        height: 1px;
+        background-color: #2B292D; 
+        opacity: 0.1;
+    }
 }
-
-.footer-links {
-    height: 50px ;
+.social-links {
+    display: flex;
+    margin-left: auto;
+    &__item {
+        margin-right: 20px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+.downloads {
+    margin-top: 25px;
+}
+.about-company {
+    margin-top: 43px;
 }
