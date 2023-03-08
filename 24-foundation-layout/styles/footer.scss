@@ -8,6 +8,7 @@
         height: 338px;
         width: 1140px;
         margin: 0 auto; 
+        display: flex;
     }
     &__description {
         width: 360px;
@@ -15,7 +16,8 @@
         font-size: 18px;
         color: #2B292D;
         opacity: 0.6;
-        margin-top: 26px;
+        margin: 26px 0 0 0;
+        
     }
     &-links {
         height: 50px;
@@ -62,4 +64,33 @@
 }
 .about-company {
     margin-top: 43px;
+}
+.additional-navigation {
+    display: flex;
+    margin-left: 126px;
+    margin-top: 60px;
+    &__column{
+        margin-right: 29px;
+    }
+}
+.nav-links {
+    width: 265px;
+    &__title {   
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0;
+    }
+
+   
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 18px;
+        opacity: 0.6;
+    }
+    &__list-item{}
 }
