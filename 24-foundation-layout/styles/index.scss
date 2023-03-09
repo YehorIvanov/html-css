@@ -9,7 +9,13 @@ body {
     min-height: 100vh;
     color: #2B292D;
 }
-
-@import "headline.scss";
+.top-section {
+    background-color: #F3C6BD;
+    width: 1400px;
+    height: 710px;
+    padding-top: 39px;
+}
+@import 'header.scss';
+@import 'headline.scss';
 
 @import 'footer.scss';
