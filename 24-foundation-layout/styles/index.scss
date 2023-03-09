@@ -14,8 +14,13 @@ body {
     width: 1400px;
     height: 710px;
     padding-top: 39px;
+
 }
-@import 'header.scss';
 @import 'headline.scss';
+@import 'common.scss';
+
+@import 'header.scss';
+
+
 
 @import 'footer.scss';
