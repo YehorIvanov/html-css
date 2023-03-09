@@ -1,0 +1,22 @@
+.about {
+    width: 1400px;
+    height: 255px;
+    display: flex;
+    justify-content: space-between;
+    background-color:  #F4F5F7;
+    padding: 77px 130px 76px 130px;
+}
+.article {
+    
+    width: 555px;
+    height: 102px;
+    font-size: 22px;
+    line-height: 32px;
+    &__title {
+        font-weight: 700;
+        margin: 0 0 6px 0;
+    }
+    &__text {
+        margin: 0;
+    }
+}
