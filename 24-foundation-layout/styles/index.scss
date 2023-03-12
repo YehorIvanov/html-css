@@ -1,6 +1,15 @@
 * {
     box-sizing: border-box;
 }
+@media screen and (min-width:1400px) {
+    .top-section {
+        background-color: #F3C6BD;
+        width: 1400px;
+        height: 710px;
+        padding-top: 39px;
+
+    }
+}
 body {
     font-family: 'Work Sans', sans-serif;
     display: flex;
@@ -8,12 +17,17 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #2B292D;
+    width: 100vw;
+}
+.page {
+    width: 100%;
 }
 .top-section {
     background-color: #F3C6BD;
-    width: 1400px;
-    height: 710px;
-    padding-top: 39px;
+    max-width: 100%;
+    margin: auto
+    // height: 710px;
+    // padding-top: 39px;
 }
 
 @import 'common.scss';

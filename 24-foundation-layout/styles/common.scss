@@ -1,4 +1,18 @@
+
 .action-button {
+    background-color: #3040C4;
+    color: #fff;
+    width: calc( 100% - 30px);
+    height: 48px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    border: none;
+    border-radius: 2px;
+    margin: 0 15px 30px 15px;
+    }
+@media screen and (min-width:1400px) {
+    .action-button {
     background-color: #3040C4;
     color: #fff;
     width: 160px;
@@ -8,4 +22,6 @@
     line-height: 13px;
     border: none;
     border-radius: 2px;
-}
+    margin: 0;
+    }
+}   

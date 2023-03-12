@@ -1,46 +1,89 @@
 
 .headline {
-    width: 1140px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
     position: relative;
     &__title {
         z-index: 1;
-        margin: 76px 0 0 0;
+        margin: 35px 15px 0 15px;
         font-weight: 700;
-        font-size: 80px;
-        line-height: 78px;
-        letter-spacing: -0.5px;
-        width: 754px;
-        height: 165px;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.3125px;
+        width: 290px;
+        // height: 165px;
     }
     &__description {
         z-index: 1;
-        margin: 34px 0 58px 0;
-        width: 456px;
-        height: 102px;
+        margin: 24px 15px 30px 15px;
+        width: 290px;
         font-size: 24px;
         line-height: 34px;
         
     }
     &__banner {
-        position: absolute;
-        width: 796px;
-        height: 448px;
-        top: 84px;
-        right: -105px;
+        max-width: 100%;
+        margin-bottom: 36px;
     }
     &__learn-more-btn {
         background-color: #fff;
         color: #3040C4;
-        width: 158px;
+        width: calc(100% - 30px);
         height: 48px;
         font-weight: 700;
         font-size: 18px;
         line-height: 13px;
         border: none;
         border-radius: 2px;
-        margin-left: 10px;
+        margin: 0 15px 33px 15px;
+    }
+}
+@media screen and (min-width:1400px) {
+    .headline {
+        width: 1140px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        &__title {
+            z-index: 1;
+            margin: 76px 0 0 0;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 78px;
+            letter-spacing: -0.5px;
+            width: 754px;
+            height: 165px;
+        }
+        &__description {
+            z-index: 1;
+            margin: 34px 0 58px 0;
+            width: 456px;
+            height: 102px;
+            font-size: 24px;
+            line-height: 34px;
+            
+        }
+        &__banner {
+            position: absolute;
+            width: 796px;
+            height: 448px;
+            top: 84px;
+            right: -105px;
+        }
+        &__learn-more-btn {
+            background-color: #fff;
+            color: #3040C4;
+            width: 158px;
+            height: 48px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 13px;
+            border: none;
+            border-radius: 2px;
+            margin-left: 10px;
+        }
     }
 }
