@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .top-section {
     background-color: #F3C6BD;
     width: 1400px;
@@ -43,7 +43,7 @@ body {
   margin: 0 15px 30px 15px;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .action-button {
     background-color: #3040C4;
     color: #fff;
@@ -106,7 +106,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .header {
     width: 1140px;
     height: 62px;
@@ -194,7 +194,7 @@ body {
   margin: 0 15px 33px 15px;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .headline {
     width: 1140px;
     display: flex;
@@ -265,7 +265,7 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .about {
     flex-direction: row;
     width: 1400px;
@@ -315,7 +315,7 @@ body {
   max-width: 80%;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .customers {
     width: 1140px;
     margin: auto;

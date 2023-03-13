@@ -13,7 +13,6 @@
         line-height: 50px;
         letter-spacing: -0.3125px;
         width: 290px;
-        // height: 165px;
     }
     &__description {
         z-index: 1;
@@ -40,7 +39,7 @@
         margin: 0 15px 33px 15px;
     }
 }
-@media screen and (min-width:1400px) {
+@media screen and (min-width: $breakpoint) {
     .headline {
         width: 1140px;
         display: flex;

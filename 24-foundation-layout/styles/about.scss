@@ -21,7 +21,7 @@
         margin: 0;
     }
 }
-@media screen and (min-width:1400px) {
+@media screen and (min-width: $breakpoint) {
     .about {
         flex-direction: row;
         width: 1400px;

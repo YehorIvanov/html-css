@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
 }
-@media screen and (min-width:1400px) {
+$breakpoint: 400px;
+@media screen and (min-width: $breakpoint) {
     .top-section {
         background-color: #F3C6BD;
         width: 1400px;
