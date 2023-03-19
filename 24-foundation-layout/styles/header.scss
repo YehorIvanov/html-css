@@ -58,14 +58,16 @@
         }
         &__button {
             display: block;
+            margin-top: 7px;
+            margin-right: 0;
         }
     }
     .navigation {
         display: block;
         justify-self: end;
-        margin-left: auto;
-        margin-top: 7px;
+        margin-top: 18px;
         margin-right: 56px;
+        margin-left: auto;
         
         &__item {
             color: #2B292D;
