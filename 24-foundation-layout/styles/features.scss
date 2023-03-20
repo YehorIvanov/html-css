@@ -1,9 +1,6 @@
 
-@media screen and (max-width: calc($breakpoint - 1px )) {
-    .features {
-        display: none;
-    }
-    
+.features {
+    display: none;
 }
 
 @media screen and (min-width: $breakpoint)  {
