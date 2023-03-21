@@ -564,7 +564,7 @@ body {
   flex-direction: column;
   align-items: start;
   width: 100%;
-  padding: 30px 15px 30px 15px;
+  padding: 30px 15px 20px 15px;
 }
 .footer-terms {
   display: flex;
