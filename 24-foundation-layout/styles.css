@@ -517,6 +517,69 @@ body {
     display: none;
   }
 }
+.order {
+  background-color: #F4F5F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 15px;
+}
+.order__illustration {
+  width: 200px;
+  margin-bottom: 40px;
+}
+.order__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.25px;
+  margin: 0 0 18px 0;
+}
+.order__text {
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0 0 40px 0;
+}
+.order__form {
+  display: flex;
+  flex-direction: column;
+}
+.order__email {
+  width: 290px;
+  height: 48px;
+  padding: 0;
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid rgba(50, 41, 60, 0.2);
+  border-radius: 2px;
+}
+.order__email::placeholder {
+  font-size: 18px;
+  line-height: 13px;
+  text-align: center;
+}
+.order__button {
+  width: 290px;
+  height: 48px;
+  margin: 12px 0 0 0;
+}
+.order__terms {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.order__terms-link {
+  text-decoration-line: underline;
+  color: #3142C6;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
