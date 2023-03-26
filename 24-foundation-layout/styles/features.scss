@@ -1,10 +1,8 @@
 
 .features {
     display: none;
-}
 
-@media screen and (min-width: $lg)  {
-    .features {
+    @include for-large-up {
         margin: auto;
         display: block;
         padding:  0 130px;
@@ -115,9 +113,7 @@
                 position: absolute;
                 top: 50px;
                 left: -39px;
-                
             }
-
         }
         &__img_hidden-ouch {
             position: absolute;
@@ -130,6 +126,6 @@
             bottom: 0;   
         }
 
-
     }
 }
+
