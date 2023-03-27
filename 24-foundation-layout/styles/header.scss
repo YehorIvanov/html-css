@@ -5,8 +5,20 @@
     display: flex;
     justify-content: start;
     background-color: #fff;
+
+    @include for-large-up {
+        width: 1140px;
+        height: 62px;
+        background-color: #F3C6BD;
+    }
     &__button {
         display: none;
+
+        @include for-large-up {
+            display: block;
+            margin-top: 7px;
+            margin-right: 0;
+        }
     }
     &__nav {
         margin-left: auto;
@@ -16,59 +28,21 @@
         background-color: #fff;
         padding: auto;
         
+        @include for-large-up {
+            display: none;
+        }
+        
     }
 }
 .navigation {
     display: none;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    &__text {
-        display: flex;
-        flex-direction: column;
-        line-height: 25px;
-        color: #2B292D;
-        justify-content: center;
-        margin-left: 9px;
-    }
-    &__img {
-        height: 48px;
-        margin-left: 15px;
-        
-    }
-    &__name {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
-    }
-    &__description {
-        display: none;
-    }
-} 
 
-
-@media screen and (min-width: $lg) {
-    .header {
-        width: 1140px;
-        height: 62px;
-        background-color: #F3C6BD;
-        &__nav {
-            display: none;
-        }
-        &__button {
-            display: block;
-            margin-top: 7px;
-            margin-right: 0;
-        }
-    }
-    .navigation {
+    @include for-large-up {
         display: block;
         justify-self: end;
         margin-top: 18px;
         margin-right: 56px;
         margin-left: auto;
-        
         &__item {
             color: #2B292D;
             text-decoration: none;
@@ -89,21 +63,43 @@
             display: inline-block;
             background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
         }
-        
     }
-    .logo {
-        
-        
-        &__img {
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        justify-content: center;
+        margin-left: 9px;
+    }
+    &__img {
+        height: 48px;
+        margin-left: 15px;
+
+        @include for-large-up {
             height: 60px;
         }
         
-        &__description {
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    &__description {
+        display: none;
+
+        @include for-large-up {
             display: block;
             font-size: 18px;
             opacity: 0.6;
         }
-    } 
-}
+    }
+} 
+
 
 
