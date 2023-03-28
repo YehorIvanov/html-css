@@ -311,6 +311,9 @@
     flex-direction: row;
   }
 }
+.customers_second-edition {
+  margin: 43px 0 76px 0;
+}
 .customers__row {
   display: flex;
   justify-content: space-around;
@@ -325,6 +328,11 @@
   height: 94px;
   border-right: 1px solid #E3E3E3;
   border-bottom: 1px solid #E3E3E3;
+}
+@media screen and (min-width: 1400px) {
+  .customers__item {
+    border: none;
+  }
 }
 .customers__item:last-of-type {
   border-right: none;
@@ -523,6 +531,11 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1400px) {
+  .audience {
+    padding: 108px 0 110px 0;
+  }
+}
 .audience__subtitle {
   font-weight: 700;
   font-size: 22px;
@@ -538,12 +551,73 @@
   text-align: center;
   letter-spacing: -0.357143px;
 }
+@media screen and (min-width: 1400px) {
+  .audience__title {
+    height: 112px;
+    width: 555px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    margin: 24px 0 0 0;
+  }
+}
 .audience__description {
   margin: 18px 0 0 0;
   font-size: 24px;
   line-height: 34px;
   text-align: center;
 }
+@media screen and (min-width: 1400px) {
+  .audience__description {
+    width: 555px;
+    height: 72px;
+    margin: 30px 0 4px 0;
+  }
+}
+.audience__user-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1245px;
+  margin: 40px 0 0 0;
+}
+@media screen and (min-width: 1400px) {
+  .audience__user-cards {
+    flex-direction: row;
+    width: 1139px;
+    height: 300px;
+    margin: 111px 0 0 0;
+  }
+}
+
+.user-card {
+  height: 300px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  .user-card {
+    width: 262px;
+  }
+}
+.user-card__image {
+  display: block;
+  height: 195px;
+  margin: 22px auto;
+}
+.user-card__caption {
+  margin-bottom: 33px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+
 .order {
   background-color: #F4F5F7;
   display: flex;

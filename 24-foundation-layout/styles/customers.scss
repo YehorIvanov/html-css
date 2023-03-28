@@ -3,7 +3,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-
+    
     @include for-large-up {
         width: 1140px;
         align-items: center;
@@ -11,6 +11,9 @@
         margin-top: 30px;
         margin-bottom: 105px;
         flex-direction: row;
+    }
+    &_second-edition {
+        margin: 43px 0 76px 0;
     }
     &__row {
         display: flex;
@@ -26,6 +29,12 @@
         height: 94px;
         border-right: 1px solid #E3E3E3;
         border-bottom: 1px solid #E3E3E3;
+
+        @include for-large-up {
+            border: none;
+        }
+
+
         &:last-of-type {
             border-right: none;
         }
