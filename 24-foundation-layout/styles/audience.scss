@@ -68,8 +68,14 @@
     border-radius: 8px;
     margin:0;
 
+
     @include for-large-up {
         width: 262px;
+    }
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #3040C4;
     }
     &__image {
         display: block;
