@@ -25,6 +25,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   background-color: #3040C4;
   color: #fff;
+  cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
   .button {
@@ -725,6 +726,164 @@
 }
 .dot-nav__item:first-of-type {
   margin-left: 0;
+}
+
+.hiring {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  .hiring {
+    padding: 106px 0 110px 0;
+  }
+}
+.hiring__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.357143px;
+  margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
+.hiring__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  margin: 18px 0 0 0;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__text {
+    width: 555px;
+    height: 72px;
+    margin: 20px 0 0 0;
+  }
+}
+.hiring__button {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__button {
+    margin-top: 28px;
+    width: 247px;
+  }
+}
+.hiring__vacancies {
+  margin: 39px 0 0 0;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__vacancies {
+    margin: 110px 0 0 0;
+  }
+}
+.hiring__vacancy {
+  margin-top: 15px;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__vacancy {
+    margin-top: 20px;
+  }
+}
+.hiring__vacancy:first-of-type {
+  margin-top: 0;
+}
+
+.vacancy {
+  width: 290px;
+  height: 140px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #2B292D;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (min-width: 1400px) {
+  .vacancy {
+    width: 750px;
+    height: 81px;
+  }
+  .vacancy:hover {
+    background-color: #3141C5;
+    color: #fff;
+  }
+  .vacancy:hover .vacancy__location {
+    color: #fff;
+    opacity: 1;
+  }
+  .vacancy:hover .icon-arrow-right {
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
+  }
+}
+.vacancy__details {
+  width: 100%;
+  padding: 20px 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1400px) {
+  .vacancy__details {
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 26px;
+    justify-content: start;
+  }
+}
+.vacancy__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+@media screen and (min-width: 1400px) {
+  .vacancy__title {
+    width: 408px;
+  }
+}
+.vacancy__location {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.6;
+}
+@media screen and (min-width: 1400px) {
+  .vacancy__location {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.vacancy__arrow-container {
+  width: 50px;
+  height: 100%;
+  background-color: #D5D4D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1400px) {
+  .vacancy__arrow-container {
+    width: 55px;
+    background-color: transparent;
+  }
+}
+.vacancy .icon-arrow-right {
+  display: block;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+  height: 12px;
+  width: 7px;
 }
 
 .order {
