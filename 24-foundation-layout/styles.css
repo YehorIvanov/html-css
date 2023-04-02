@@ -526,11 +526,63 @@
 }
 
 .inbox {
+  width: 100%;
   padding: 50px 15px;
   background-color: #FCF0E3;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1400px) {
+  .inbox {
+    flex-direction: row;
+    padding: 0 99px 0 193px;
+  }
 }
 .inbox__illustration {
+  margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__illustration {
+    margin: 142px 0 101px 0;
+  }
+}
+.inbox__image {
   max-width: 100%;
+}
+.inbox__caption {
+  display: none;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  opacity: 0.6;
+  margin: 15px 0 0 0;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__caption {
+    display: block;
+  }
+}
+.inbox__details {
+  margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__details {
+    margin: 115px 0 0 164px;
+    width: 519px;
+  }
+}
+.inbox__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 18px 0 0 0;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__description {
+    margin: 30px 0 0 30px;
+    width: 461px;
+    height: 102px;
+  }
 }
 .inbox__subtitle {
   font-weight: 700;
@@ -539,6 +591,11 @@
   color: #F1592B;
   margin: 32px 0 0 0;
 }
+@media screen and (min-width: 1400px) {
+  .inbox__subtitle {
+    margin: 0 0 0 30px;
+  }
+}
 .inbox__title {
   font-weight: 700;
   font-size: 40px;
@@ -546,11 +603,15 @@
   letter-spacing: -0.357143px;
   margin: 17px 0 0 0;
 }
-.inbox__description {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  margin: 18px 0 0 0;
+@media screen and (min-width: 1400px) {
+  .inbox__title {
+    margin: 24px 0 0 30px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    width: 462px;
+    height: 112px;
+  }
 }
 
 .review {
@@ -559,6 +620,12 @@
   padding: 30px 20px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-bottom: 4px solid #0185D0;
+}
+@media screen and (min-width: 1400px) {
+  .review {
+    margin: 44px 0 0 0;
+    padding: 30px 30px 28px 30px;
+  }
 }
 .review__text {
   font-size: 20px;
@@ -571,6 +638,12 @@
 .review__author {
   margin: 26px 0 0 0;
   display: flex;
+}
+@media screen and (min-width: 1400px) {
+  .review__author {
+    width: 225px;
+    height: 44px;
+  }
 }
 .review__author-image {
   width: 40px;
