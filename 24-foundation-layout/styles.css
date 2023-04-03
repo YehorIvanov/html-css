@@ -242,6 +242,7 @@
   background-color: #fff;
   color: #3040C4;
   width: 158px;
+  line-height: 48px;
 }
 .headline__banner {
   max-width: 100vw;
@@ -254,7 +255,7 @@
     width: 796px;
     height: 448px;
     top: 0;
-    left: 445px;
+    left: 447px;
     margin: 0px;
   }
 }
