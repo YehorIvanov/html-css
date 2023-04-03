@@ -192,7 +192,7 @@
 @media screen and (min-width: 1400px) {
   .headline {
     width: 1140px;
-    margin: 76px 0 0 126px;
+    margin: 76px 0 0 130px;
     padding: 0;
   }
 }
@@ -224,7 +224,7 @@
 }
 @media screen and (min-width: 1400px) {
   .headline__description {
-    margin: 34px 0 0 4px;
+    margin: 34px 0 0 0;
     width: 456px;
     height: 102px;
   }
@@ -238,6 +238,11 @@
     margin-top: 58px;
   }
 }
+.headline__button_learn-more {
+  background-color: #fff;
+  color: #3040C4;
+  width: 158px;
+}
 .headline__banner {
   max-width: 100vw;
   margin-bottom: 36px;
@@ -248,8 +253,8 @@
     position: absolute;
     width: 796px;
     height: 448px;
-    top: 8px;
-    left: 453px;
+    top: 0;
+    left: 445px;
     margin: 0px;
   }
 }
