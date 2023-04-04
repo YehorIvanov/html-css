@@ -315,16 +315,16 @@
 }
 @media screen and (min-width: 1400px) {
   .customers {
-    width: 1140px;
     align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 105px;
     flex-direction: row;
   }
-}
-.customers_second-edition {
-  margin: 43px 0 76px 0;
+  .customers_first-edition {
+    padding: 30px 130px 106px 130px;
+  }
+  .customers_second-edition {
+    padding: 43px 129px 76px 131px;
+  }
 }
 .customers__row {
   display: flex;
@@ -1512,7 +1512,7 @@ body {
 }
 @media screen and (min-width: 1400px) {
   .page {
-    width: 1440px;
+    width: 1400px;
   }
 }
 
