@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 
     @include for-large-up {
-        width: 1400px;
+        width: 100%;
         align-items: center;
     }
     &-navigation {
@@ -114,7 +114,7 @@
             text-decoration: none;
             font-size: 14px;
             line-height: 22px;
-            opacity: 60%;
+            opacity: 0.6;
             padding-right: 19px;
             &:last-of-type {
                 padding-right: 0;

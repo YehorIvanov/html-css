@@ -31,14 +31,14 @@ body {
     width: 100%;
 
     @include for-large-up {
-        width: 1400px;
+        width: $lg;
     }
 }
 .top-section {
     background-color: $color-pink;
     max-width: 100%;
     @include for-large-up {
-        width: 1400px;
+        width: 100%;
         height: 710px;
         padding-top: 39px;
     }
