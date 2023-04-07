@@ -21,16 +21,16 @@
     border: none;
     border-radius: 2px;
     // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    background-color: #3040C4;
-    color: #fff;
+    background-color: $color-blue;
+    color: $color-white;
     cursor: pointer;
 
     @include for-large-up {
         width: 160px;
     }
     &_learn-more{
-        background-color: #fff;
-        color: #000;
+        background-color: $color-white;
+        color: $color-black;
 
         @include for-large-up {
             width: 158px;
@@ -39,8 +39,8 @@
     }
 }
 .action-button {
-    background-color: #3040C4;
-    color: #fff;
+    background-color: $color-blue;
+    color: $color-white;
     width: calc( 100% - 30px);
     height: 48px;
     font-weight: 700;

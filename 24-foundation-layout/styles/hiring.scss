@@ -66,12 +66,12 @@
 .vacancy {
     width: 290px;
     height: 140px;
-    border: 1px solid rgba(43, 41, 45, 0.2);
-    border-radius: 8px;
+    border: $border-grey;
+    border-radius: $border-radius-l;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    color: #2B292D;
+    color: $text-color-main;
     overflow: hidden;
     cursor: pointer;
 
@@ -79,10 +79,10 @@
         width: 750px;
         height: 81px;
         &:hover {
-            background-color: #3141C5;
-            color: #fff;
+            background-color: $color-blue;
+            color: $color-white;
             .vacancy__location {
-                color: #fff;
+                color: $color-white;
                 opacity: 1;
             }
             .icon-arrow-right {
@@ -133,7 +133,7 @@
     &__arrow-container {
         width: 50px;
         height:100% ;
-        background-color: #D5D4D5;
+        background-color: $color-purpul-light;
         display: flex;
         justify-content: center;
         align-items: center;

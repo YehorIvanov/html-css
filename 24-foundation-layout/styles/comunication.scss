@@ -26,7 +26,7 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 34px;
-        color: #0189D1;
+        color: $text-color-aqua;
 
         @include for-large-up {
             margin: 13px 0 0 2px;
@@ -78,7 +78,7 @@
         border: none;
         height: 1px;
         width: 150px;
-        background-color: #000;
+        background-color: $color-black;
         opacity: 0.1;
         margin: 40px 0 0 0;
 
@@ -116,7 +116,7 @@
     }
     &__more-link {
         font-weight: 700;
-        color: #3040C4;
+        color: $text-color-blue;
     }
 }
 

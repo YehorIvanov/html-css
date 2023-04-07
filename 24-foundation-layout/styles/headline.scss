@@ -52,8 +52,8 @@
         }
     }
     &__button_learn-more {
-        background-color: #fff;
-        color: #3040C4;
+        background-color: $color-white;
+        color: $text-color-blue;
 
         @include for-large-up {
             width: 158px;

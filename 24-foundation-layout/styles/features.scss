@@ -10,11 +10,12 @@
         max-width: 1400px;
         margin-bottom: 102px;
         position: relative;
+
         &__subtitle {
             font-weight: 700;
             font-size: 22px;
             line-height: 34px;
-            color: #009B4D;
+            color: $text-color-green;
             margin: 0 0 24px 0;
         }
         &__title {
@@ -38,7 +39,7 @@
             font-weight: 700;
             font-size: 22px;
             line-height: 26px;
-            color: #3142C6;
+            color: $text-color-blue;
             margin: 0 0 8px 39px;
             position: relative;
             width: 418px;
@@ -58,7 +59,7 @@
                 content: '' ;
                 height: 3px;
                 width: 457px;
-                background-color: #3142C6;
+                background-color: $text-color-blue;
                 position: absolute;
                 top: 104px;
                 left: -39px;
@@ -108,7 +109,7 @@
                 content: '' ;
                 height: 1px;
                 width: 457px;
-                background-color: #2b292d;
+                background-color: $text-color-main;
                 opacity: 0.15;
                 position: absolute;
                 top: 50px;
