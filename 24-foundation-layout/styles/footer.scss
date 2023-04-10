@@ -1,193 +1,183 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include for-large-up {
+    width: 100%;
+    align-items: center;
+  }
+  &-navigation {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
 
     @include for-large-up {
-        width: 100%;
-        align-items: center;
+      height: 338px;
+      width: 1140px;
+      margin: 0 auto;
+      flex-direction: row;
     }
-    &-navigation {
-        display: flex;
-        flex-direction: column; 
+  }
+  &__description {
+    display: none;
 
-        @include for-large-up {
-            height: 338px;
-            width: 1140px;
-            margin: 0 auto; 
-            flex-direction: row;
-        }
+    @include for-large-up {
+      display: block;
+      width: 360px;
+      line-height: 26px;
+      font-size: 18px;
+      color: $text-color-main;
+      opacity: 0.6;
+      margin: 26px 0 0 0;
     }
-    &__description {
-        display: none;
+  }
+  &__logo {
+    flex-direction: column;
+    margin: auto;
 
-        @include for-large-up {
-            display: block;
-            width: 360px;
-            line-height: 26px;
-            font-size: 18px;
-            color: $text-color-main;
-            opacity: 0.6;
-            margin: 26px 0 0 0;
-        }
+    @include for-large-up {
+      flex-direction: row;
+      margin-top: 43px;
     }
-    &__logo {
-        flex-direction: column;
-        margin: auto;
+    & img {
+      margin-bottom: 20px;
 
-        @include for-large-up {
-            flex-direction: row;
-            margin-top: 43px;
-        }
-        & img {
-            margin-bottom: 20px;
-
-            @include for-large-up {
-                margin-bottom: 0;
-            }
-        }
-        &-description {
-            display: block;
-        }
-        &-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            @include for-large-up {
-                align-items: start
-            }
-        }
+      @include for-large-up {
+        margin-bottom: 0;
+      }
     }
-
-    &__line {
-        margin: 0;
-        border: none;
-        width: 100%;
-        height: 1px;
-        background-color: $text-color-main; 
-        opacity: 0.1;
-        &-responsive {
-            display: block;
-        }
-        &-desktop {
-            display: none;
-        }
-
-        @include for-large-up {
-            &-responsive {
-                display: none;
-            }
-            &-desktop {
-                display: block;
-            }
-        }
+    &-description {
+      display: block;
     }
-    &-links {
-        height: auto;
-        display: flex;
-        flex-direction: column;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include for-large-up {
         align-items: start;
-        width: 320px;
-        padding: 30px 15px 20px 15px;
-
-        @include for-large-up {
-            height: 50px;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            width: 1140px;
-
-        }
+      }
     }
-    &-terms {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
+  }
 
-        @include for-large-up {
-            margin-bottom: 0;
-        }
-        &__item {
-            color: $text-color-main;
-            text-decoration: none;
-            font-size: 14px;
-            line-height: 22px;
-            opacity: 0.6;
-            padding-right: 19px;
-            &:last-of-type {
-                padding-right: 0;
-            }
-        }
+  &__line {
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: $text-color-main;
+    opacity: 0.1;
+    &-responsive {
+      display: block;
     }
+    &-desktop {
+      display: none;
+    }
+
+    @include for-large-up {
+      &-responsive {
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
+    }
+  }
+  &-links {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 320px;
+    padding: 30px 15px 20px 15px;
+
+    @include for-large-up {
+      height: 50px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 1140px;
+    }
+  }
+  &-terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include for-large-up {
+      margin-bottom: 0;
+    }
+    &__item {
+      color: $text-color-main;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 22px;
+      opacity: 0.6;
+      padding-right: 19px;
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
 }
 .about-company {
-    margin: 0;
-    padding: 40px 30px;
+  margin: 0;
+  padding: 40px 30px;
 
-    @include for-large-up {
-        padding: 0;
-    }
+  @include for-large-up {
+    padding: 0;
+  }
 }
 .downloads {
   display: flex;
   justify-content: center;
   margin-top: 31px;
   & img:first-of-type {
-    margin-right: 9px;
+    justify-content: start;
   }
-
-  @include for-large-up {
-        margin-top: 25px;
-        justify-content: start;
-    }
 }
 .nav-links {
-    width: 265px;
-    &__title {   
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 28px;
-        margin: 0;
-    }
-    &__list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-        line-height: 30px;
-        margin-top: 18px;
-        opacity: 0.6;
-    }
-    
+  width: 265px;
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 18px;
+    opacity: 0.6;
+  }
 }
 .additional-navigation {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @include for-large-up {
+    flex-direction: row;
+    margin: 60px 0 0 126px;
+  }
+  &__column {
+    margin: 30px 15px 0 15px;
 
     @include for-large-up {
-        flex-direction: row;
-        margin: 60px 0 0 126px;
+      margin: 0;
     }
-    &__column{
-        margin: 30px 15px 0 15px;
-
-        @include for-large-up {
-            margin: 0;
-        }
-    }
+  }
 }
 .social-links {
-    display: flex;
-    &__item {
-        margin-right: 20px;
-        &:last-of-type {
-            margin-right: 0;
-        }
+  display: flex;
+  &__item {
+    margin-right: 20px;
+    &:last-of-type {
+      margin-right: 0;
     }
+  }
 }
-
-
-

@@ -1,42 +1,40 @@
-
 .buttons-block {
-    margin: 30px 0 0 0;
-    height: 108px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    @include for-large-up {
-        height: 48px;
-        width: 328px;
-        flex-direction: row;
-    }
+  margin: 30px 0 0 0;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include for-large-up {
+    height: 48px;
+    width: 328px;
+    flex-direction: row;
+  }
 }
 .button {
-    height: 48px;
-    width: 290px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 13px;
-    border: none;
-    border-radius: 2px;
-    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    background-color: $color-blue;
-    color: $color-white;
-    cursor: pointer;
+  height: 48px;
+  width: 290px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  border: none;
+  border-radius: 2px;
+  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background-color: $color-blue;
+  color: $color-white;
+  cursor: pointer;
+
+  @include for-large-up {
+    width: 160px;
+  }
+  &_learn-more {
+    background-color: $color-white;
+    color: $color-black;
 
     @include for-large-up {
-        width: 160px;
+      width: 158px;
     }
-    &_learn-more{
-        background-color: $color-white;
-        color: $color-black;
-
-        @include for-large-up {
-            width: 158px;
-        }
-        
-    }
+  }
 }
 // .action-button {
 //     background-color: $color-blue;
@@ -61,8 +59,8 @@
 //         }
 //     }
 
-    // .hide_mobile {
-    //     @include for-large-down {
-    //         display: none;
-    //     }
-    // }
+// .hide_mobile {
+//     @include for-large-down {
+//         display: none;
+//     }
+// }

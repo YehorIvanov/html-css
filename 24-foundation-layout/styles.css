@@ -22,7 +22,7 @@
   line-height: 13px;
   border: none;
   border-radius: 2px;
-  background-color: #3040C4;
+  background-color: #3040c4;
   color: #fff;
   cursor: pointer;
 }
@@ -53,7 +53,7 @@
   .header {
     width: 1140px;
     height: 62px;
-    background-color: #F3C6BD;
+    background-color: #f3c6bd;
     margin: auto;
   }
 }
@@ -94,7 +94,7 @@
     margin-left: auto;
   }
   .navigation__item {
-    color: #2B292D;
+    color: #2b292d;
     text-decoration: none;
     line-height: 25px;
     font-size: 18px;
@@ -209,7 +209,7 @@
 }
 .headline__button_learn-more {
   background-color: #fff;
-  color: #3040C6;
+  color: #3040c6;
 }
 @media screen and (min-width: 1400px) {
   .headline__button_learn-more {
@@ -238,7 +238,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
   padding: 46px 15px 46px 15px;
 }
 @media screen and (min-width: 1400px) {
@@ -308,8 +308,8 @@
   flex: 1;
   width: 107px;
   height: 94px;
-  border-right: 1px solid #E3E3E3;
-  border-bottom: 1px solid #E3E3E3;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 @media screen and (min-width: 1400px) {
   .customers__item {
@@ -346,7 +346,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
-    color: #009B4D;
+    color: #009b4d;
     margin: 0 0 24px 0;
   }
   .features__title {
@@ -369,7 +369,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #3040C6;
+    color: #3040c6;
     margin: 0 0 8px 39px;
     position: relative;
     width: 418px;
@@ -389,7 +389,7 @@
     content: "";
     height: 3px;
     width: 457px;
-    background-color: #3040C6;
+    background-color: #3040c6;
     position: absolute;
     top: 104px;
     left: -39px;
@@ -436,7 +436,7 @@
     content: "";
     height: 1px;
     width: 457px;
-    background-color: #2B292D;
+    background-color: #2b292d;
     opacity: 0.15;
     position: absolute;
     top: 50px;
@@ -466,13 +466,13 @@
 
 .tip {
   padding: 40px 15px 40px 15px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
 }
 .tip__subtitle {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #009B4D;
+  color: #009b4d;
 }
 .tip__title {
   font-weight: 700;
@@ -509,7 +509,7 @@
 .inbox {
   width: 100%;
   padding: 50px 15px;
-  background-color: #FCF0E3;
+  background-color: #fcf0e3;
   display: flex;
   flex-direction: column;
 }
@@ -569,7 +569,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #F1592B;
+  color: #f1592b;
   margin: 32px 0 0 0;
 }
 @media screen and (min-width: 1400px) {
@@ -600,7 +600,7 @@
   margin: 30px 0 0 0;
   padding: 30px 20px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  border-bottom: 4px solid #0185D0;
+  border-bottom: 4px solid #0185d0;
 }
 @media screen and (min-width: 1400px) {
   .review {
@@ -673,7 +673,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #0189D1;
+  color: #0189d1;
 }
 @media screen and (min-width: 1400px) {
   .comunication__subtitle {
@@ -770,7 +770,7 @@
 }
 .benefit__more-link {
   font-weight: 700;
-  color: #3040C6;
+  color: #3040c6;
 }
 
 .audience {
@@ -858,7 +858,7 @@
 .user-card:hover {
   cursor: pointer;
   color: #fff;
-  background-color: #3040C4;
+  background-color: #3040c4;
 }
 .user-card__image {
   display: block;
@@ -878,7 +878,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   position: relative;
 }
 @media screen and (min-width: 1400px) {
@@ -890,7 +890,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #3040C6;
+  color: #3040c6;
   margin: 0;
 }
 .feedback__text {
@@ -958,7 +958,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #2B292D;
+  background-color: #2b292d;
   opacity: 0.2;
   margin-left: 19px;
 }
@@ -970,7 +970,7 @@
   }
 }
 .dot-nav__item_selected {
-  background-color: #3040C4;
+  background-color: #3040c4;
   opacity: 1;
 }
 .dot-nav__item:first-of-type {
@@ -1054,7 +1054,7 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  color: #2B292D;
+  color: #2b292d;
   overflow: hidden;
   cursor: pointer;
 }
@@ -1064,7 +1064,7 @@
     height: 81px;
   }
   .vacancy:hover {
-    background-color: #3040C4;
+    background-color: #3040c4;
     color: #fff;
   }
   .vacancy:hover .vacancy__location {
@@ -1117,7 +1117,7 @@
 .vacancy__arrow-container {
   width: 50px;
   height: 100%;
-  background-color: #D5D4D5;
+  background-color: #d5d4d5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1136,7 +1136,7 @@
 }
 
 .order {
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1230,7 +1230,7 @@
   font-size: 18px;
   line-height: 13px;
   text-align: center;
-  color: #2B292D;
+  color: #2b292d;
 }
 @media screen and (min-width: 1400px) {
   .order__email::placeholder {
@@ -1256,7 +1256,7 @@
 }
 .order__terms-link {
   text-decoration-line: underline;
-  color: #3040C6;
+  color: #3040c6;
   opacity: 1;
 }
 
@@ -1293,7 +1293,7 @@
     width: 360px;
     line-height: 26px;
     font-size: 18px;
-    color: #2B292D;
+    color: #2b292d;
     opacity: 0.6;
     margin: 26px 0 0 0;
   }
@@ -1334,7 +1334,7 @@
   border: none;
   width: 100%;
   height: 1px;
-  background-color: #2B292D;
+  background-color: #2b292d;
   opacity: 0.1;
 }
 .footer__line-responsive {
@@ -1379,7 +1379,7 @@
   }
 }
 .footer-terms__item {
-  color: #2B292D;
+  color: #2b292d;
   text-decoration: none;
   font-size: 14px;
   line-height: 22px;
@@ -1406,13 +1406,7 @@
   margin-top: 31px;
 }
 .downloads img:first-of-type {
-  margin-right: 9px;
-}
-@media screen and (min-width: 1400px) {
-  .downloads {
-    margin-top: 25px;
-    justify-content: start;
-  }
+  justify-content: start;
 }
 
 .nav-links {
@@ -1474,7 +1468,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  color: #2B292D;
+  color: #2b292d;
   width: 100vw;
 }
 
@@ -1488,7 +1482,7 @@ body {
 }
 
 .top-section {
-  background-color: #F3C6BD;
+  background-color: #f3c6bd;
   max-width: 100%;
 }
 @media screen and (min-width: 1400px) {

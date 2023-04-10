@@ -1,53 +1,50 @@
 .customers {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    &_first-edition {
+      padding: 30px 130px 106px 130px;
+    }
+    &_second-edition {
+      padding: 43px 129px 76px 131px;
+    }
+  }
+  &__row {
     display: flex;
-    flex-direction: column;
-    
+    justify-content: space-around;
+    flex: 1;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 107px;
+    height: 94px;
+    border-right: $border;
+    border-bottom: $border;
+
     @include for-large-up {
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
-
-        &_first-edition {
-            padding: 30px 130px 106px 130px;
-    
-        }
-        &_second-edition {
-            padding: 43px 129px 76px 131px;
+      border: none;
     }
-    
-    }
-    &__row {
-        display: flex;
-        justify-content: space-around;
-        flex: 1;
-    }
-    &__item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        width: 107px;
-        height: 94px;
-        border-right: $border;
-        border-bottom: $border;
 
-        @include for-large-up {
-            border: none;
-        }
-
-
-        &:last-of-type {
-            border-right: none;
-        }
+    &:last-of-type {
+      border-right: none;
     }
-    &__logo {
-        filter: brightness(0);
-        max-width: 80%;
+  }
+  &__logo {
+    filter: brightness(0);
+    max-width: 80%;
 
-        @include for-large-up {
-            max-width: 100%;
-        }
+    @include for-large-up {
+      max-width: 100%;
     }
+  }
 }

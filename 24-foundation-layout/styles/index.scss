@@ -1,45 +1,45 @@
-@import 'variables.scss';
-@import 'breakpoints.scss';
-@import 'common.scss';
-@import 'header.scss';
-@import 'headline.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
-@import 'tips.scss';
-@import 'inbox.scss';
-@import 'comunication.scss';
-@import 'audience.scss';
-@import 'feedback.scss';
-@import 'hiring.scss';
-@import 'order.scss';
-@import 'footer.scss';
+@import "variables.scss";
+@import "breakpoints.scss";
+@import "common.scss";
+@import "header.scss";
+@import "headline.scss";
+@import "about.scss";
+@import "customers.scss";
+@import "features.scss";
+@import "tips.scss";
+@import "inbox.scss";
+@import "comunication.scss";
+@import "audience.scss";
+@import "feedback.scss";
+@import "hiring.scss";
+@import "order.scss";
+@import "footer.scss";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Work Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    color:  $text-color-main;
-    width: 100vw;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: $text-color-main;
+  width: 100vw;
 }
 .page {
-    width: 100%;
+  width: 100%;
 
-    @include for-large-up {
-        width: $lg;
-    }
+  @include for-large-up {
+    width: $lg;
+  }
 }
 .top-section {
-    background-color: $color-pink;
-    max-width: 100%;
-    @include for-large-up {
-        width: 100%;
-        height: 710px;
-        padding-top: 39px;
-    }
+  background-color: $color-pink;
+  max-width: 100%;
+  @include for-large-up {
+    width: 100%;
+    height: 710px;
+    padding-top: 39px;
+  }
 }
